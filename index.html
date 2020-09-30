@@ -1,19 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <a href="#" class="logo">
+            <span class="logo__figere"></span>
+          </a>
 
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="" class="menu__link">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Projects</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Cost calculator</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Contacts</a>
+            </li>
+          </ul>
+          <div class="header__button-wrap">
+            <a href="#" class="header__btn">— HIRE ME</a>
+            <div class="header__burger" id="burger">
+              <span></span>
+            </div>
+          </div>
+        </nav>
+        <div class="ofer">
+          <h1 class="ofer__name">[Moroz Roman]</h1>
+          <h2 class="ofer__title">{Frontend} _DEVELOPER</h2>
+          <p class="ofer__description">
+            / Using HTML, CSS, JavaScript, React Native and Node.js I help to
+            build websites, small and medium web apps for business
+          </p>
+          <button type="button" class="ofer__btn btn">
+            See my recent works —
+          </button>
+          <img
+            src="./img/img/my-photo.jpg"
+            alt="Moroz Roman"
+            class="ofer__about-img"
+          />
+          <p class="ofer__about-me">About me in 2 minutes</p>
+          <button type="button" class="offer__video-btn accent-btn">
+            <i class="fas fa-play"></i>
+            Play
+          </button>
+          <img
+            src="./img/img/laptop.svg"
+            class="ofer__laptop-img"
+            alt="laptop"
+          />
+          <div class="experience">
+            <h3 class="experience__title">My Coding Skills & Experience</h3>
+            <div class="experience__skills-wrap">
+              <div class="experience__skills">
+                <div class="experience__skills-dotted">
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                </div>
+                <p class="experience__skills-text">Html</p>
+              </div>
+              <div class="experience__skills">
+                <div class="experience__skills-dotted">
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                </div>
+                <p class="experience__skills-text">CSS</p>
+              </div>
+              <div class="experience__skills">
+                <div class="experience__skills-dotted">
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle"></i>
+                </div>
+                <p class="experience__skills-text">JavaScript</p>
+              </div>
+              <div class="experience__skills">
+                <div class="experience__skills-dotted">
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                </div>
+                <p class="experience__skills-text">React</p>
+              </div>
+              <div class="experience__skills">
+                <div class="experience__skills-dotted">
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                </div>
+                <p class="experience__skills-text">Node</p>
+              </div>
+              <div class="experience__skills">
+                <div class="experience__skills-dotted">
+                  <i class="far fa-circle experience__skills-accent"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                  <i class="far fa-circle"></i>
+                </div>
+                <p class="experience__skills-text">React Native</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="container container-left">
+          <h3 class="section-title about-title">I code things from scratch_</h3>
+          <p class="about-descr">
+            <span>[and help to</span>
+            <span>create great web</span>
+            <span>apps]</span>
+          </p>
+          <div class="about-img-container">
+            <p class="about-img-text">
+              WEB
+              <img
+                src="img/img/web-apps-laptop.png"
+                alt="web apps laptop"
+                class="about-img"
+              />
+            </p>
+          </div>
+          <p class="about-text">
+            / I will help you to create a high-performance Landing Page,
+            functional corporate website for your business, interactive web app
+            for SaaS, startup, or other services.
+          </p>
+          <p class="about-text">
+            / My specialization is front-end development — client side of the
+            web. But I also have full-stack developer experience.
+          </p>
+        </div>
+      </section>
 
-    <h1>Hello world </h1>
+      <section class="personal-projects">
+        <div class="container">
+          <h3 class="section-title personal-projects-title">
+            My personal _projects
+          </h3>
 
-    <i class="fas fa-play"></i>
-    
-</body>
+          <div class="personal-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/img/projects/personal/full-stack.jpg"
+                alt="full stack website"
+                class="personal-project-img"
+              />
+            </div>
+            <p class="personal-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              <span>Technology: HTML5, CSS3, JS</span>
+            </p>
+            <button class="personal-project-btn btn">More details —</button>
+          </div>
+
+          <div class="personal-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/img/projects/personal/wedding.jpg"
+                alt="wedding website"
+                class="personal-project-img"
+              />
+            </div>
+            <p class="personal-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              <span>Technology: HTML, CSS, JavaScript, PHP</span>
+            </p>
+            <button class="personal-project-btn btn">More details —</button>
+          </div>
+
+          <div class="personal-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/img/projects/personal/pro-test.jpg"
+                alt="pro test website"
+                class="personal-project-img"
+              />
+            </div>
+            <p class="personal-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              <span>Technology: React.js, Node.js</span>
+            </p>
+            <button class="personal-project-btn btn">More details —</button>
+          </div>
+
+          <div class="personal-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/img/projects/personal/goit.jpg"
+                alt="goit website"
+                class="personal-project-img"
+              />
+            </div>
+            <p class="personal-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              <span>Technology: HTML, CSS, JavaScript, Wordpress</span>
+            </p>
+            <button class="personal-project-btn btn">More details —</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-projects">
+        <div class="container">
+          <span class="team-projects-title-bgd">TEAM</span>
+          <h3 class="section-title team-projects-title">Teamwork _projects</h3>
+          <div class="team-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/img/projects/team/questify.jpg"
+                alt="quetify app"
+                class="personal-project-img"
+              />
+            </div>
+            <p class="team-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              Technology: React.js, Node.js
+            </p>
+            <button class="personal-project-btn btn">More details —</button>
+          </div>
+          <div class="team-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/img/projects/team/it-test.jpg"
+                alt="it test app"
+                class="personal-project-img"
+              />
+            </div>
+            <p class="team-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              Technology: React.js, Node.js
+            </p>
+            <button class="personal-project-btn btn">More details —</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
