@@ -272,4 +272,49 @@ img {
   height: auto;
   border-style: none;
 }
+
+.btn {
+  font-family: "Acrom", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: block;
+  border: none;
+  outline: none;
+  background-color: #ff6b08;
+  color: #fff;
+  cursor: pointer;
+  padding: 20px 30px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btn:hover, .btn:focus {
+  -webkit-box-shadow: 1px 1px 1px #fff;
+          box-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px #000001;
+}
+
+.accent-btn {
+  font-family: "Acrom", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: block;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.accent-btn:hover, .accent-btn:focus {
+  -webkit-box-shadow: 1px 1px 1px #fff;
+          box-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px #000001;
+}
 /*# sourceMappingURL=main.css.map */

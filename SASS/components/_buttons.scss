@@ -1,0 +1,48 @@
+%button {
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: block;
+  border: none;
+  outline: none;
+  background-color: $c-accent;
+  color: $txt-c-light;
+  cursor: pointer;
+  padding: 20px 30px;
+  transition: all 0.2s linear;
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 1px $c-light;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0.5);
+  }
+}
+
+.btn {
+  @extend %button;
+}
+
+%accent-btn {
+  font-family: $font-main;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: block;
+  outline: none;
+  color: $txt-c-light;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 1px $c-light;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0.5);
+  }
+}
+
+.accent-btn {
+  @extend %accent-btn;
+}
