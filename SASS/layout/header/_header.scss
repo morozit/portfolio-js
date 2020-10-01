@@ -1,0 +1,26 @@
+.header {
+  background-color: $c-dark;
+  color: $txt-c-light;
+  padding-top: 30px;
+  padding-bottom: 55px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__button-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn {
+  color: var(--c-accent);
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

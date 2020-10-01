@@ -1,0 +1,59 @@
+.logo {
+  display: block;
+}
+
+.logo__figere {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: $c-accent;
+  border: 2px solid transparent;
+  position: relative;
+  transition: all 0.2s linear;
+}
+
+.logo__figere:before {
+  position: absolute;
+  content: "MR";
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $txt-c-light;
+  font-size: 20px;
+  top: 15px;
+  left: 10px;
+  z-index: 10;
+  transition: all 0.2s linear;
+}
+
+.logo__figere:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 2px solid $c-light;
+  top: 5px;
+  left: 5px;
+  transition: all 0.2s linear;
+}
+
+.logo__figere:hover,
+.logo__figere:focus {
+  border: 2px solid $c-light;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.logo__figere:hover::before,
+.logo__figere:focus::before {
+  top: 17px;
+  left: 10px;
+  font-size: 24px;
+}
+
+.logo__figere:hover::after,
+.logo__figere:focus::after {
+  border: 2px solid transparent;
+  background-color: $c-accent;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}

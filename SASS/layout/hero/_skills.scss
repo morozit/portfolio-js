@@ -1,0 +1,52 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 236px;
+}
+
+.experience__title {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.experience__skills {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: all 0.2s linear;
+}
+
+.experience__skills-dotted {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.experience__skills-dotted i {
+  color: $txt-c-grey;
+  font-size: 8px;
+  margin-right: 5px;
+}
+
+.experience__skills-dotted .experience__skills-accent {
+  color: $txt-c-accent;
+  transition: all 0.2s linear;
+}
+
+.experience__skills-text {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.experience__skills:hover .experience__skills-accent {
+  text-shadow: 0 0 5px $txt-c-accent;
+}
+
+.experience__skills:hover {
+  transform: translateX(3px);
+}

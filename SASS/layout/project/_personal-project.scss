@@ -1,0 +1,67 @@
+/* PERSONAL PROJECT */
+
+.personal-projects {
+  background: $c-dark;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.personal-project-item-container {
+  padding-top: 40px;
+  background: $c-dark-blue;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+}
+
+.personal-project-name {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+  color: $txt-c-light;
+  margin: 25px 0;
+  display: flex;
+}
+
+.personal-project-img {
+  width: 100%;
+}
+
+.projet-item-dot-container {
+  display: flex;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
+
+.personal-project-item {
+  border-bottom: 1px solid $c-grey-blue;
+  margin-bottom: 30px;
+}
+
+.personal-project-item:last-child {
+  margin-bottom: 0;
+}
+
+.projet-item-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $c-grey-blue;
+  margin-right: 7px;
+}
+
+.projet-item-dot:first-child {
+  background: $c-accent;
+}
+
+.personal-project-icon {
+  font-size: 18px;
+  color: $c-accent;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.personal-project-btn {
+  padding: 15px 30px 15px 10px;
+  margin-bottom: 30px;
+}

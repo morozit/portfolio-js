@@ -1,0 +1,47 @@
+/* TEAM PROJECT */
+
+.team-projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.team-projects .container {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.team-projects-title {
+  color: $txt-c-dark;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.team-projects-title-bgd {
+  position: absolute;
+  top: -50px;
+  left: 45px;
+  font-weight: bold;
+  font-size: 150px;
+  line-height: 180px;
+  text-transform: uppercase;
+  color: $txt-c-grey-light;
+  z-index: -1;
+}
+
+.team-project-name {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+  color: $txt-c-dark;
+  margin: 25px 0;
+  display: flex;
+}
+
+.team-project-item {
+  border-bottom: 1px solid $c-grey-light;
+  margin-bottom: 30px;
+}
+
+.team-project-item:last-child {
+  margin-bottom: 0;
+}
