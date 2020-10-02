@@ -2,24 +2,19 @@
   margin-left: auto;
   margin-right: auto;
 
-  padding-left: 15px;
-  padding-right: 15px;
-  // outline: 1px solid $accent-color;
+  outline: 1px solid $c-accent;
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   @media screen and (min-width: $tablet-min) {
     width: $tablet-min;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   @media screen and (min-width: $desktop) {
     width: $desktop;
   }
-}
-%h {
-  margin: 0;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 0.03em;
-  color: $title-color;
 }

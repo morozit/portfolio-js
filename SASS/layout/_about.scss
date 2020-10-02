@@ -1,0 +1,112 @@
+/* ABOUT PAGE */
+
+.about {
+  &__background {
+    background-color: $c-light;
+  }
+
+  &__container {
+    @extend %container;
+
+    @media screen and (min-width: $mobile) {
+      padding-top: 55px;
+      padding-bottom: 55px;
+    }
+    @media screen and (min-width: $tablet-min) {
+      padding-top: 65px;
+      padding-bottom: 65px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 130px;
+      padding-bottom: 140px;
+    }
+  }
+  &__title {
+    color: $txt-c-dark;
+    text-align: left;
+    width: 280px;
+
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 21px;
+    }
+    @media screen and (min-width: $tablet-min) {
+      margin-bottom: 28px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__descr {
+    // width: 280px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: $txt-c-light;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    // background: $c-dark-blue;
+    padding: 4px 9px;
+  }
+
+  &__descr--span {
+    background: $c-dark-blue;
+    padding: 4px 9px;
+  }
+
+  &__img--container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__img--text {
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 180px;
+    text-transform: uppercase;
+    color: $txt-c-grey-light;
+    writing-mode: tb-rl;
+    margin: auto;
+    position: relative;
+  }
+
+  &__img {
+    width: 235px;
+    height: 254px;
+    position: absolute;
+    left: -35px;
+    top: 55px;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    color: $c-dark;
+    margin: 0 0 30px 0;
+  }
+
+  &__text:last-child {
+    margin-bottom: 0;
+  }
+}
+// .about__descr {
+//   font-weight: bold;
+//   font-size: 24px;
+//   line-height: 29px;
+//   text-transform: uppercase;
+//   color: $txt-c-light;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   margin: 0;
+// }
+// .about-descr span {
+//   background: $c-dark-blue;
+//   padding: 4px 9px;
+// }

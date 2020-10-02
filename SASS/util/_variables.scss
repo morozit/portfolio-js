@@ -1,6 +1,6 @@
 // ! background
 $c-dark: #141d2d;
-$c-light: #fff;
+$c-light: #ffffff;
 $c-accent: #ff6b08;
 
 $c-dark-blue: #253045;
@@ -19,11 +19,17 @@ $txt-c-light: $c-light;
 $font-main: "Acrom", sans-serif;
 
 // ! container width
-$vertical-scroll: 20px;
-$mobile: calc(300px + $vertical-scroll);
-$tablet: calc(640px + $vertical-scroll);
-$desktop: calc(900px + $vertical-scroll);
-$desktop-lg: calc(1146px + $vertical-scroll);
+// $vertical-scroll: 20px;
+// $mobile: calc(300px + $vertical-scroll);
+// $tablet: calc(640px + $vertical-scroll);
+// $desktop: calc(900px + $vertical-scroll);
+// $desktop-lg: calc(1146px + $vertical-scroll);
+
+$mobile: 320px;
+$mobile-max: 639px;
+$tablet-min: 640px;
+$tablet-max: 1199px;
+$desktop: 1200px;
 
 //  ! animation
 $animation-fast: 100ms cubic-bezier(0.4, 0, 0.2, 1);
