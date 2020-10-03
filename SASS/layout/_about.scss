@@ -22,18 +22,34 @@
     }
   }
   &__title {
+    position: relative;
+    display: flex;
+    font-weight: bold;
+    text-transform: uppercase;
     color: $txt-c-dark;
-    text-align: left;
-    width: 280px;
+
+    z-index: 10;
 
     @media screen and (min-width: $mobile) {
-      margin-bottom: 21px;
+      font-size: 35px;
+      line-height: 42px;
+      margin-bottom: 40px;
+      text-align: left;
     }
     @media screen and (min-width: $tablet-min) {
-      margin-bottom: 28px;
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 50px;
+      justify-content: start;
+      text-align: left;
     }
     @media screen and (min-width: $desktop) {
-      margin-bottom: 28px;
+      font-size: 70px;
+      line-height: 84px;
+      margin-bottom: 55px;
+      justify-content: start;
+      text-align: left;
+      width: 550px;
     }
   }
 
