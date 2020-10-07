@@ -868,7 +868,7 @@ body.lock {
 }
 
 .experience__skills:hover .experience__skills-accent {
-  text-shadow: 0 0 5px #ff6b08;
+  text-shadow: 0 0 10px #ff6b08;
 }
 
 .experience__skills:hover {

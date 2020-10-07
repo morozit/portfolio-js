@@ -44,7 +44,8 @@
 }
 
 .experience__skills:hover .experience__skills-accent {
-  text-shadow: 0 0 5px $txt-c-accent;
+  text-shadow: 0 0 10px $txt-c-accent;
+  // background-color: $c-accent;
 }
 
 .experience__skills:hover {
