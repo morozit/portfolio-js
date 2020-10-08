@@ -750,6 +750,21 @@ body.lock {
   line-height: 42px;
   text-transform: uppercase;
   margin-bottom: 22px;
+  width: 400px;
+}
+
+@media screen and (min-width: 640px) {
+  .ofer__title {
+    text-align: left;
+    font-size: 55px;
+    line-height: 66px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .ofer__title-tab {
+    margin-left: 30px;
+  }
 }
 
 .ofer__description {
@@ -757,6 +772,12 @@ body.lock {
   line-height: 150%;
   max-width: 390px;
   margin-bottom: 22px;
+}
+
+@media screen and (min-width: 1200px) {
+  .ofer__description {
+    text-align: left;
+  }
 }
 
 .ofer__btn {
@@ -822,6 +843,8 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   width: 236px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .experience__title {
@@ -831,6 +854,19 @@ body.lock {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 1199px) {
+  .experience__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .experience__skills-container {
+    margin-left: 25px;
+  }
 }
 
 .experience__skills {

@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   width: 236px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .experience__title {
@@ -12,6 +14,17 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin-left: 25px;
+
+  @media screen and (max-width: $tablet-max) {
+    text-align: center;
+  }
+}
+
+.experience__skills-container {
+  @media screen and (max-width: $tablet-max) {
+    margin-left: 25px;
+  }
 }
 
 .experience__skills {

@@ -25,6 +25,22 @@
   line-height: 42px;
   text-transform: uppercase;
   margin-bottom: 22px;
+  width: 400px;
+  @media screen and (min-width: $tablet-min) {
+    text-align: left;
+    font-size: 55px;
+    line-height: 66px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 70px;
+    line-height: 84px;
+  }
+}
+
+.ofer__title-tab {
+  @media screen and (min-width: $tablet-min) {
+    margin-left: 30px;
+  }
 }
 
 .ofer__description {
@@ -32,6 +48,10 @@
   line-height: 150%;
   max-width: 390px;
   margin-bottom: 22px;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .ofer__btn {
