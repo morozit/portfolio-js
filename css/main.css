@@ -294,6 +294,11 @@ ul {
   list-style: none;
 }
 
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -850,30 +855,44 @@ body.lock {
   margin-right: 15px;
 }
 
-.experience__skills-dotted i {
-  color: #4f5b70;
+.experience__skills-normal {
+  color: #4a5771;
   font-size: 8px;
   margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) linear;
+  transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) linear;
 }
 
-.experience__skills-dotted .experience__skills-accent {
+.experience__skills-accent {
   color: #ff6b08;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  font-size: 8px;
+  margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) linear;
+  transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) linear;
+}
+
+.experience__skills:hover .experience__skills-accent {
+  background-color: #ff6b08;
+}
+
+.experience__skills:hover .experience__skills-normal {
+  text-shadow: 0 0 5px #4a5771;
+}
+
+.experience__skills:hover {
+  -webkit-transform: translateX(-6px);
+          transform: translateX(-6px);
 }
 
 .experience__skills-text {
   font-size: 16px;
   line-height: 19px;
-}
-
-.experience__skills:hover .experience__skills-accent {
-  text-shadow: 0 0 5px #ff6b08;
-}
-
-.experience__skills:hover {
-  -webkit-transform: translateX(3px);
-          transform: translateX(3px);
 }
 
 /* PERSONAL PROJECT */
@@ -1223,13 +1242,13 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   cursor: pointer;
   padding: 20px 30px;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) linear;
+  transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) linear;
 }
 
 .btn:hover, .btn:focus {
-  -webkit-box-shadow: 1px 1px 1px #ffffff;
-          box-shadow: 1px 1px 1px #ffffff;
+  -webkit-box-shadow: 1px 1px 1px #ff6b08;
+          box-shadow: 1px 1px 1px #ff6b08;
   text-shadow: 1px 1px 1px #000001;
 }
 
@@ -1243,14 +1262,15 @@ input[type="radio"].visually-hidden {
   display: block;
   outline: none;
   color: #ffffff;
+  background-color: transparent;
   cursor: pointer;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) linear;
+  transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) linear;
 }
 
 .accent-btn:hover, .accent-btn:focus {
-  -webkit-box-shadow: 1px 1px 1px #ffffff;
-          box-shadow: 1px 1px 1px #ffffff;
+  -webkit-box-shadow: 1px 1px 1px #ff6b08;
+          box-shadow: 1px 1px 1px #ff6b08;
   text-shadow: 1px 1px 1px #000001;
 }
 /*# sourceMappingURL=main.css.map */

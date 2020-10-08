@@ -12,10 +12,10 @@
   color: $txt-c-light;
   cursor: pointer;
   padding: 20px 30px;
-  transition: all 0.2s linear;
+  transition: all $animation-fast linear;
   &:hover,
   &:focus {
-    box-shadow: 1px 1px 1px $c-light;
+    box-shadow: 1px 1px 1px $c-accent;
     text-shadow: 1px 1px 1px rgb(0, 0, 0.5);
   }
 }
@@ -32,13 +32,15 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   display: block;
+  // border: none;
   outline: none;
   color: $txt-c-light;
+  background-color: transparent;
   cursor: pointer;
-  transition: all 0.2s linear;
+  transition: all $animation-fast linear;
   &:hover,
   &:focus {
-    box-shadow: 1px 1px 1px $c-light;
+    box-shadow: 1px 1px 1px $c-accent;
     text-shadow: 1px 1px 1px rgb(0, 0, 0.5);
   }
 }

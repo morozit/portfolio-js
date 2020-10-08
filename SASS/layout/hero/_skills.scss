@@ -27,26 +27,39 @@
   margin-right: 15px;
 }
 
-.experience__skills-dotted i {
-  color: $txt-c-grey;
+.experience__skills-normal {
+  color: $c-grey-blue;
   font-size: 8px;
   margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: all $animation-fast linear;
 }
 
-.experience__skills-dotted .experience__skills-accent {
+.experience__skills-accent {
   color: $txt-c-accent;
-  transition: all 0.2s linear;
+  font-size: 8px;
+  margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: all $animation-fast linear;
+}
+
+.experience__skills:hover .experience__skills-accent {
+  background-color: $txt-c-accent;
+}
+.experience__skills:hover .experience__skills-normal {
+  text-shadow: 0 0 5px $c-grey-blue;
+  // background-color: $c-grey-blue;
+}
+
+.experience__skills:hover {
+  transform: translateX(-6px);
 }
 
 .experience__skills-text {
   font-size: 16px;
   line-height: 19px;
-}
-
-.experience__skills:hover .experience__skills-accent {
-  text-shadow: 0 0 5px $txt-c-accent;
-}
-
-.experience__skills:hover {
-  transform: translateX(3px);
 }
