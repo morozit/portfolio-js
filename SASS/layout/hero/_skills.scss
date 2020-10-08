@@ -47,12 +47,13 @@
   transition: all $animation-fast linear;
 }
 
-.experience__skills:hover .experience__skills-accent {
-  background-color: $txt-c-accent;
-}
 .experience__skills:hover .experience__skills-normal {
   text-shadow: 0 0 5px $c-grey-blue;
   // background-color: $c-grey-blue;
+}
+
+.experience__skills:hover .experience__skills-accent {
+  background-color: $txt-c-accent;
 }
 
 .experience__skills:hover {

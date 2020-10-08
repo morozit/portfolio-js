@@ -877,12 +877,12 @@ body.lock {
   transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) linear;
 }
 
-.experience__skills:hover .experience__skills-accent {
-  background-color: #ff6b08;
-}
-
 .experience__skills:hover .experience__skills-normal {
   text-shadow: 0 0 5px #4a5771;
+}
+
+.experience__skills:hover .experience__skills-accent {
+  background-color: #ff6b08;
 }
 
 .experience__skills:hover {
