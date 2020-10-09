@@ -1,0 +1,13 @@
+.hero {
+  @extend %container;
+
+  @media screen and (min-width: $mobile) {
+    padding-bottom: 55px;
+  }
+  @media screen and (min-width: $tablet-min) {
+    padding-bottom: 90px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 200px;
+  }
+}

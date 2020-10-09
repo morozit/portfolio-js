@@ -1,10 +1,44 @@
 .header {
   background-color: $c-dark;
   color: $txt-c-light;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 55px;
-}
 
+  @extend %container;
+
+  @media screen and (min-width: $mobile) {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+  @media screen and (min-width: $tablet-min) {
+    padding-top: 25px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 40px;
+    padding-bottom: 120px;
+  }
+}
+// .header__container {
+//   background: $c-dark;
+
+//   &__container {
+//     @extend %container;
+
+//     @media screen and (min-width: $mobile) {
+//       padding-top: 55px;
+//       padding-bottom: 55px;
+//     }
+//     @media screen and (min-width: $tablet-min) {
+//       padding-top: 65px;
+//       padding-bottom: 90px;
+//     }
+//     @media screen and (min-width: $desktop) {
+//       padding-top: 130px;
+//       padding-bottom: 200px;
+//     }
+//   }
+// }
 .header__nav {
   display: flex;
   justify-content: space-between;
