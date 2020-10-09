@@ -1,0 +1,117 @@
+.cb-form {
+  background-color: $c-light;
+
+  &__container {
+    @extend %container;
+    position: relative;
+    overflow-x: hidden;
+    background: $c-light;
+
+    @media screen and (min-width: $mobile) {
+      padding-bottom: 55px;
+    }
+    @media screen and (min-width: $tablet-min) {
+      padding-bottom: 90px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 150px;
+    }
+  }
+
+  &__container--background {
+    background: $c-dark;
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: $txt-c-light;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 40px;
+      padding: 35px 20px 0px 20px;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: $tablet-min) {
+      font-size: 36px;
+      line-height: 43px;
+      margin-bottom: 50px;
+      padding: 70px 105px 0px 105px;
+      margin-bottom: 25px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 36px;
+      line-height: 43px;
+      margin-bottom: 55px;
+      padding: 90px 215px 0px 215px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .cb-form__descr {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    color: $txt-c-light;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 17px;
+      line-height: 150%;
+
+      padding: 35px 20px 0px 20px;
+
+      margin-bottom: 33px;
+    }
+    @media screen and (min-width: $tablet-min) {
+      font-size: 17px;
+      line-height: 150%;
+
+      padding: 70px 105px 0px 105px;
+
+      margin-bottom: 37px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 17px;
+      line-height: 150%;
+
+      padding: 0px 250px;
+
+      margin-bottom: 50px;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__input {
+    background: transparent;
+    outline: none;
+    border: none;
+
+    text-align: center;
+
+    padding-bottom: 0px 30px;
+    @media screen and (min-width: $mobile) {
+      justify-content: center;
+    }
+    @media screen and (min-width: $tablet-min) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+  }
+  // .btn {
+  // }
+  // .cb-form__btn {
+  // }
+}
