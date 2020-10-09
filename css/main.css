@@ -30,14 +30,14 @@
   font-style: normal;
 }
 
-.header, .about__container, .hero, .personal-projects__container, .team-projects__container {
+.header, .about__container, .hero, .personal-projects__container, .team-projects__container, .cb-form__container {
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid #ff6b08;
 }
 
 @media screen and (min-width: 320px) {
-  .header, .about__container, .hero, .personal-projects__container, .team-projects__container {
+  .header, .about__container, .hero, .personal-projects__container, .team-projects__container, .cb-form__container {
     width: 320px;
     padding-left: 10px;
     padding-right: 10px;
@@ -45,7 +45,7 @@
 }
 
 @media screen and (min-width: 640px) {
-  .header, .about__container, .hero, .personal-projects__container, .team-projects__container {
+  .header, .about__container, .hero, .personal-projects__container, .team-projects__container, .cb-form__container {
     width: 640px;
     padding-left: 20px;
     padding-right: 20px;
@@ -53,7 +53,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .header, .about__container, .hero, .personal-projects__container, .team-projects__container {
+  .header, .about__container, .hero, .personal-projects__container, .team-projects__container, .cb-form__container {
     width: 1200px;
   }
 }
@@ -669,6 +669,7 @@ body.lock {
 }
 
 .about__descr {
+  min-width: 280px;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
@@ -685,7 +686,6 @@ body.lock {
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 0;
-  padding: 4px 9px;
 }
 
 .about__descr--span {
@@ -1040,7 +1040,6 @@ body.lock {
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
-  z-index: 10;
 }
 
 @media screen and (min-width: 320px) {
@@ -1272,6 +1271,147 @@ body.lock {
 
 .team-project-item:last-child {
   margin-bottom: 0;
+}
+
+.cb-form {
+  background-color: #ffffff;
+}
+
+.cb-form__container {
+  position: relative;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+@media screen and (min-width: 320px) {
+  .cb-form__container {
+    padding-bottom: 55px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .cb-form__container {
+    padding-bottom: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cb-form__container {
+    padding-bottom: 150px;
+  }
+}
+
+.cb-form__container--background {
+  background: #141d2d;
+}
+
+.cb-form__title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 320px) {
+  .cb-form__title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 40px;
+    padding: 35px 20px 0px 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .cb-form__title {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 50px;
+    padding: 70px 105px 0px 105px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cb-form__title {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 55px;
+    padding: 90px 215px 0px 215px;
+    margin-bottom: 10px;
+  }
+}
+
+.cb-form .cb-form__descr {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 320px) {
+  .cb-form .cb-form__descr {
+    font-size: 17px;
+    line-height: 150%;
+    padding: 35px 20px 0px 20px;
+    margin-bottom: 33px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .cb-form .cb-form__descr {
+    font-size: 17px;
+    line-height: 150%;
+    padding: 70px 105px 0px 105px;
+    margin-bottom: 37px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cb-form .cb-form__descr {
+    font-size: 17px;
+    line-height: 150%;
+    padding: 0px 250px;
+    margin-bottom: 50px;
+  }
+}
+
+.cb-form__label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cb-form__input {
+  background: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+  padding-bottom: 0px 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .cb-form__input {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
