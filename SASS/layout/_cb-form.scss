@@ -20,6 +20,15 @@
 
   &__container--background {
     background: $c-dark;
+    @media screen and (min-width: $mobile) {
+      padding: 35px 20px 40px 20px;
+    }
+    @media screen and (min-width: $tablet-min) {
+      padding: 75px 105px 80px 105px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 90px 155px 100px 150px;
+    }
   }
 
   &__title {
@@ -34,27 +43,24 @@
     @media screen and (min-width: $mobile) {
       font-size: 24px;
       line-height: 29px;
-      margin-bottom: 40px;
-      padding: 35px 20px 0px 20px;
+
       margin-bottom: 20px;
     }
     @media screen and (min-width: $tablet-min) {
       font-size: 36px;
       line-height: 43px;
-      margin-bottom: 50px;
-      padding: 70px 105px 0px 105px;
+
       margin-bottom: 25px;
     }
     @media screen and (min-width: $desktop) {
       font-size: 36px;
       line-height: 43px;
-      margin-bottom: 55px;
-      padding: 90px 215px 0px 215px;
+
       margin-bottom: 10px;
     }
   }
 
-  .cb-form__descr {
+  &__descr {
     position: relative;
     display: flex;
     justify-content: center;
@@ -66,7 +72,7 @@
       font-size: 17px;
       line-height: 150%;
 
-      padding: 35px 20px 0px 20px;
+      // padding: 35px 20px 0px 20px;
 
       margin-bottom: 33px;
     }
@@ -74,7 +80,7 @@
       font-size: 17px;
       line-height: 150%;
 
-      padding: 70px 105px 0px 105px;
+      // padding: 70px 105px 0px 105px;
 
       margin-bottom: 37px;
     }
@@ -82,7 +88,7 @@
       font-size: 17px;
       line-height: 150%;
 
-      padding: 0px 250px;
+      // padding: 0px 250px;
 
       margin-bottom: 50px;
     }
@@ -91,24 +97,53 @@
   &__label {
     position: relative;
     display: flex;
-    justify-content: center;
+
+    @media screen and (min-width: $mobile) {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $tablet-min) {
+      justify-content: center;
+
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: inline-block;
+      // flex-direction: row;
+      justify-content: center;
+      margin-right: 20px;
+
+      // &:not(:last-child) {
+      //   margin-right: 20px;
+      // }
+    }
   }
 
   &__input {
+    display: flex;
+    justify-content: center;
     background: transparent;
     outline: none;
     border: none;
-
+    border-bottom: 1px solid $c-grey-blue;
     text-align: center;
 
-    padding-bottom: 0px 30px;
+    padding: 0px 30px 15px 30px;
     @media screen and (min-width: $mobile) {
-      justify-content: center;
+      width: 240px;
     }
     @media screen and (min-width: $tablet-min) {
+      width: 350px;
     }
     @media screen and (min-width: $desktop) {
+      width: 260px;
     }
+  }
+
+  &__input::placeholder {
+    font-size: 17px;
+    line-height: 150%;
+    color: $txt-c-grey;
   }
   // .btn {
   // }
