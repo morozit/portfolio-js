@@ -1727,6 +1727,53 @@ body.lock {
   margin-bottom: 25px;
 }
 
+.calculator-form__input .tech-input-container .choices__item {
+  background: #ff6b08;
+  border: none;
+  border-radius: 3px;
+  position: relative;
+}
+
+.calculator-form__input .tech-input-container:after {
+  content: "\f107";
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  margin-top: -2.5px;
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.calculator-form__input .tech-input-container {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #bcc1d2;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.calculator-form__input .choices__input {
+  display: none;
+}
+
+.calculator-form__input .choices__item .choices__button {
+  border-left: none;
+  margin: 0;
+  padding-left: 8px;
+}
+
 .footer {
   color: #141d2d;
   background-color: #ffffff;
@@ -2040,8 +2087,39 @@ input[type="radio"].visually-hidden {
 }
 
 .scroll-btn {
-  position: absolute;
-  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: fixed;
+  background-color: transparent;
   right: 20px;
+  bottom: 58px;
+  z-index: 90;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-color: #ff6b08;
+}
+
+.scroll-btn__style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  color: #ff6b08;
 }
 /*# sourceMappingURL=main.css.map */
