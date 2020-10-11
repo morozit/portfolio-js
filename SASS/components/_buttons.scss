@@ -78,3 +78,31 @@
 .accent-btn {
   @extend %accent-btn;
 }
+
+.scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  // display: none;
+  position: fixed;
+  background-color: transparent;
+  right: 20px;
+  bottom: 58px;
+  z-index: 90;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-color: $c-accent;
+
+  @extend %accent-btn;
+
+  &__style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: $c-accent;
+  }
+}
