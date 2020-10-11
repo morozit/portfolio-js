@@ -1,61 +1,76 @@
 /* Burger strat */
-.header__burger {
-  display: block;
-  position: relative;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  z-index: 5;
-  background-color: $c-accent;
-}
+// .header__burger {
+//   display: block;
+//   position: relative;
+//   width: 30px;
+//   height: 30px;
+//   cursor: pointer;
+//   z-index: 5;
+//   background-color: $c-accent;
+// }
 
-.header__burger span {
-  position: absolute;
-  background-color: $c-grey-light;
-  width: 10px;
-  height: 2px;
-  top: 14px;
-  left: 10px;
-  transition: all 0.2s linear;
-}
+// .header__burger span {
+//   position: absolute;
+//   background-color: $c-grey-light;
+//   width: 10px;
+//   height: 2px;
+//   top: 14px;
+//   left: 10px;
+//   transition: all 0.2s linear;
+// }
 
-.header__burger::before,
-.header__burger::after {
-  content: "";
-  background-color: $c-grey-light;
-  position: absolute;
-  width: 10px;
-  height: 2px;
-  left: 10px;
-  transition: all 0.2s linear;
-}
+// .header__burger::before,
+// .header__burger::after {
+//   content: "";
+//   background-color: $c-grey-light;
+//   position: absolute;
+//   width: 10px;
+//   height: 2px;
+//   left: 10px;
+//   transition: all 0.2s linear;
+// }
 
-.header__burger::before {
-  top: 10px;
-}
+// .header__burger::before {
+//   top: 10px;
+// }
 
-.header__burger::after {
-  bottom: 10px;
-}
+// .header__burger::after {
+//   bottom: 10px;
+// }
 
-.header__burger.active::before {
-  transform: rotate(45deg);
-  background-color: #fff;
-  top: 14px;
-}
+// .header__burger.active::before {
+//   transform: rotate(45deg);
+//   background-color: #fff;
+//   top: 14px;
+// }
 
-.header__burger.active::after {
-  transform: rotate(-45deg);
-  background-color: #fff;
-  bottom: 14px;
-}
+// .header__burger.active::after {
+//   transform: rotate(-45deg);
+//   background-color: #fff;
+//   bottom: 14px;
+// }
 
-.header__burger.active span {
-  transform: scale(0);
-}
+// .header__burger.active span {
+//   transform: scale(0);
+// }
 
-body.lock {
-  overflow: hidden;
-}
+// body.lock {
+//   overflow: hidden;
+// }
 
 /* Burger END */
+
+.burger {
+  width: 30px;
+  height: 30px;
+  background: $c-accent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.burger i {
+  color: $c-light;
+}

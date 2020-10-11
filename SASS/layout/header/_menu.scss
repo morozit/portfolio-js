@@ -1,0 +1,77 @@
+.menu-wrapp {
+  display: flex;
+  align-items: center;
+}
+.mobile-menu {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  position: fixed;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  background-color: $c-light;
+  padding-top: 100px;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// TODO:  стилі активного меню
+.menu.active {
+  right: 0;
+}
+
+.menu.active .menu-list__item {
+  margin-bottom: 35px;
+  margin-right: 0;
+}
+
+.menu.active .menu-list__link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $txt-c-grey;
+}
+
+.menu-list {
+}
+.menu-list__item {
+  margin-bottom: 35px;
+  margin-right: 0;
+}
+.menu-list__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu-list__link {
+  color: $txt-c-grey;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  transition: color 0.2s linear;
+}
+.menu__link:hover,
+.menu__link:focus {
+  color: $txt-c-accent;
+}
+
+.menu-contact {
+}
+.menu-contact__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.menu-contact__phone {
+}
+.menu-contact__email {
+}

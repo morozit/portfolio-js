@@ -24,28 +24,18 @@
           <a href="#" class="logo">
             <span class="logo__figere"></span>
           </a>
-          <!-- меню  БУргера,   опустити нижче???? -->
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="#about" class="menu__link">About</a>
-            </li>
-            <li class="menu__item">
-              <a href="#projects" class="menu__link">Projects</a>
-            </li>
-            <li class="menu__item">
-              <a href="#cost-calculator" class="menu__link">Cost calculator</a>
-            </li>
-            <li class="menu__item">
-              <a href="#contacts" class="menu__link">Contacts</a>
-            </li>
-          </ul>
+          
           <!-- Перейменувати header__button-wrap  на  header__nav-->
           <!--В навігацію поставити  -->
           <div class="header__button-wrap">
             <a href="#" class="header__btn">— HIRE ME</a>
-            <div class="header__burger" id="burger">
-            </div>
+            <a href="" class="burger" id="burger">
+              <i class="fas fa-bars"></i>
+            </a>
+            <!-- <div class="header__burger" id="burger">
+            </div> -->
           </div>
+         
         </nav>
       </div>
     </header>
@@ -429,7 +419,7 @@
       </section>
     </main>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
     <footer class="footer" id="contacts">
       <div class="footer__container">
@@ -475,15 +465,46 @@
 
         
       </div>
-
-
-
-
     </footer>
+    
+    <!-- Кнопка скрол до хедера -->
     <button class="scroll-btn">
       <a href="#header"><i class="fas fa-angle-double-up scroll-btn__style"></i></a>
-      
     </button>
+
+    <!-- Модалки -->
+    <div class="menu-wrapp">
+
+      <!-- TODO: меню  БУргера / мобільне меню -->
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="menu" id="menu">
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a href="#about" class="menu-list__link">About</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#projects" class="menu-list__link">Projects</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#cost-calculator" class="menu-list__link">Cost calculator</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#contacts" class="menu-list__link">Contacts</a>
+            </li>
+          </ul>
+          <ul class="menu-contact">
+            <li class="menu-contact__item">
+              <a href="tel:+380978579842" class="menu-contact__phone">+38 (097) 857-98-42</a>
+            </li>
+            <li>
+              <a href="mailto:itmorozr@gmail.com" class="menu-contact__email">itmorozr@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>  
+
+
 
     <script src="./js/main.js" type="module"></script>
     <script src="./js/choices.min.js" type="module"></script>
