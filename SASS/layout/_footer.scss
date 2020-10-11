@@ -1,0 +1,130 @@
+.footer {
+  color: $txt-c-dark;
+  background-color: $c-light;
+
+  &__container {
+    display: flex;
+    @extend %container;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+      padding: 30px 30px 45px 30px;
+    }
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 40px 20px 60px 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 20px 50px 20px;
+    }
+  }
+}
+
+.footer__about {
+  &--container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+      margin-bottom: 21px;
+    }
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      margin-right: 80px;
+      margin-bottom: 19px;
+    }
+    // @media screen and (min-width: $desktop) {
+    //   margin: 0px;
+    // }
+  }
+  &--title {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 150%;
+  }
+  &--subtitle {
+    font-size: 17px;
+    line-height: 150%;
+  }
+}
+
+.footer__address {
+  &--container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+      margin-bottom: 30px;
+    }
+    // @media screen and (min-width: $tablet-min) and (max-width: $tablet-min) {
+    //   margin-bottom: 0px;
+    // }
+    // @media screen and (min-width: $desktop) {
+    //   margin: 0px;
+    // }
+  }
+
+  &--phone {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 150%;
+
+    color: $txt-c-dark;
+
+    @media screen and (min-width: $mobile) and (max-width: $tablet-max) {
+      margin-bottom: 15px;
+    }
+  }
+  &--email {
+    font-size: 17px;
+    line-height: 150%;
+
+    color: $txt-c-dark;
+  }
+}
+// TODO: footer__social-icon
+
+.footer__social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--item:not(:last-child) {
+    margin-right: 33px;
+  }
+
+  // &--link {
+  //   color: rgba(255, 0, 0, 0.6);
+  //   font-weight: 400;
+  //   line-height: 1.71;
+  //   text-decoration: none;
+  //   transition: all $animation-slow linear;
+  // }
+  // &--link:hover,
+  // &--link:focus {
+  //   color: $accent-color;
+  //   fill: $accent-color;
+  //   transform: scaleX(1);
+  //   outline: transparent;
+  // }
+
+  &--icon {
+    display: block;
+    width: 26px;
+    height: 26px;
+    fill: $c-dark-blue;
+
+    transition: all $animation-slow linear;
+  }
+
+  &--icon:hover,
+  &--icon:focus {
+    fill: $c-accent;
+    transform: translateY(1px);
+  }
+}
