@@ -98,20 +98,21 @@
     margin-right: 33px;
   }
 
-  // &--link {
-  //   color: rgba(255, 0, 0, 0.6);
-  //   font-weight: 400;
-  //   line-height: 1.71;
-  //   text-decoration: none;
-  //   transition: all $animation-slow linear;
-  // }
-  // &--link:hover,
-  // &--link:focus {
-  //   color: $accent-color;
-  //   fill: $accent-color;
-  //   transform: scaleX(1);
-  //   outline: transparent;
-  // }
+  &--link {
+    color: rgba(255, 0, 0, 0.6);
+    fill: rgba(255, 0, 0, 0.6);
+    font-weight: 400;
+    line-height: 1.71;
+    text-decoration: none;
+    transition: all $animation-slow linear;
+  }
+  &--link:hover,
+  &--link:focus {
+    color: $c-accent;
+    fill: $c-accent;
+    transform: scaleX(1);
+    outline: transparent;
+  }
 
   &--icon {
     display: block;
