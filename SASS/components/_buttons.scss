@@ -31,6 +31,10 @@
 }
 
 .cb-form__btn {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
   padding: 14px 13px;
   @extend %button;
 }
