@@ -24,6 +24,32 @@
   @extend %button;
 }
 
+.btn__more-details {
+  padding: 15px 30px 15px 10px;
+  margin-bottom: 30px;
+  @extend %button;
+}
+
+.cb-form__btn {
+  padding: 14px 13px;
+  @extend %button;
+}
+
+.calculator-form__btn {
+  @media screen and (min-width: $mobile) {
+    padding: 14px 20px;
+  }
+  @media screen and (min-width: $tablet-min) {
+    padding: 14px 122px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 14px 40px;
+  }
+  @extend %button;
+}
+
+// TODO:  прозора кнопка з оранжевим ховером
+
 %accent-btn {
   font-family: $font-main;
   font-size: 15px;
