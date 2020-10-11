@@ -35,7 +35,6 @@
           <div class="header__button-wrap">
             <a href="#" class="header__btn">— HIRE ME</a>
             <div class="header__burger" id="burger">
-              <span></span>
             </div>
           </div>
         </nav>
@@ -194,7 +193,7 @@
               <i class="fas fa-laptop-code personal-project-icon"></i>
               <span>Technology: HTML5, CSS3, JS</span>
             </p>
-            <button class="personal-project-btn btn">More details —</button>
+            <button class="btn__more-details">More details —</button>
           </div>
           <!-- Кінець блоку слайдера  ==>> ПЕРЕОБИТИ -->
 
@@ -215,7 +214,7 @@
               <i class="fas fa-laptop-code personal-project-icon"></i>
               <span>Technology: HTML, CSS, JavaScript, PHP</span>
             </p>
-            <button class="personal-project-btn btn">More details —</button>
+            <button class="btn__more-details">More details —</button>
           </div>
 
           <div class="personal-project-item">
@@ -235,7 +234,7 @@
               <i class="fas fa-laptop-code personal-project-icon"></i>
               <span>Technology: React.js, Node.js</span>
             </p>
-            <button class="personal-project-btn btn">More details —</button>
+            <button class="btn__more-details">More details —</button>
           </div>
 
           <div class="personal-project-item">
@@ -255,7 +254,7 @@
               <i class="fas fa-laptop-code personal-project-icon"></i>
               <span>Technology: HTML, CSS, JavaScript, Wordpress</span>
             </p>
-            <button class="personal-project-btn btn">More details —</button>
+            <button class="btn__more-details">More details —</button>
           </div>
         </div>
       </section>
@@ -282,7 +281,7 @@
               <i class="fas fa-laptop-code team-projects__icon"></i>
               Technology: React.js, Node.js
             </p>
-            <button class="personal-project-btn btn">More details —</button>
+            <button class="btn__more-details">More details —</button>
           </div>
           <!-- крапки -->
           <div class="team-project-item">
@@ -302,7 +301,7 @@
               <i class="fas fa-laptop-code team-projects__icon"></i>
               Technology: React.js, Node.js
             </p>
-            <button class="personal-project-btn btn">More details —</button>
+            <button class="btn__more-details">More details —</button>
           </div>
         </div>
       </section>
@@ -318,15 +317,156 @@
             <label for="" class="cb-form__label">
               <input type="email" class="cb-form__input" placeholder="Email">
             </label>
-            <label for="" class="cb-form__label"><input type="tel" class="cb-form__input" placeholder="Phone" pattern=""></label>
+            <label for="" class="cb-form__label">
+              <input type="tel" class="cb-form__input" placeholder="Phone" pattern="">
+            </label>
             
-            <button class="btn cb-form__btn">Discuss the project —</button>
+            <button class="cb-form__btn">Discuss the project —</button>
           </form>
         </div>
+      </section>
+      <section class="calculator" id="calculator">
+
+        <h2 class="calculator__title">Calculate_ the cost of a future project</h2>
+        <p class="calculator__selected-text">This is an approximate calculation. </p>
+        <img src="./img/img/calculator.svg"
+              class="calculator__calculator-img"
+              alt="calculator"
+        />
+        <p class="calculator__description">/ The final cost depends on the technical requirements, terms, specifics of your project.</p>
+
+        <!-- ФОРМА -->
+        <form action="" class="calculator-form">
+          <div class="calculator-form__input">
+            <label for="calculator-form-website-type" class="calculator-form__title">What you want me to do:</label>
+              <select name="website-type" id="calculator-form-website-type" class="calculator-form__select">
+                <option value="landing-page:100">Landing page</option>
+                <option value="website:200" selected>Website</option>
+                <option value="cms:300">CMS</option>
+                <option value="portal:400">Portal</option>
+                <option value="e-shop:500">E-shop</option>
+              </select>
+          </div>
+
+          <div class="calculator-form__input">
+            <label for="calculator-form-technologies" class="calculator-form__title"
+              >Choose preferred technologies:</label
+            >
+            <select name="technologies" id="calculator-form-technologies" class="calculator-form__select" multiple>
+              <option value="html:200" selected>HTML</option>
+              <option value="css:300" selected>CSS</option>
+              <option value="js:400">Java Script</option>
+              <option value="react:400">React</option>
+              <option value="node:400">Node</option>
+            </select>
+          </div>
+
+          <div class="calculator-form__input">
+            <label class="calculator-form__title">Personal account and shopping cart:</label>
+            <div class="calculator-form__radio-container" id="calculator-form__input-card">
+              <input
+                type="radio"
+                class="calculator-form__input-field"
+                id="calculator-form__input-yes"
+                name="cart"
+                value="yes"
+              />
+              <label for="calculator-form__input-yes" class="calculator-form__label">Yes</label>
+
+              <input
+                checked
+                type="radio"
+                class="calculator-form__input-field"
+                id="calculator-form__input-no"
+                name="cart"
+                value="no"
+              />
+              <label for="calculator-form__input-no" class="calculator-form__label">No</label>
+            </div>
+          </div>
+
+          <div class="calculator-form__input">
+            <label class="calculator-form__title">Requests reception on your email:</label>
+            <div class="calculator-form__radio-container" id="calculator-form__input-reception">
+              <input
+                type="radio"
+                class="calculator-form__input-field"
+                id="calculator-form__input-field-yes"
+                name="reception"
+                value="yes"
+              />
+              <label for="calculator-form__input-field-yes" class="calculator-form__label">Yes</label>
+
+              <input
+                checked
+                type="radio"
+                class="calculator-form__input-field"
+                id="calculator-form__input-field-no"
+                name="reception"
+                value="no"
+              />
+              <label for="calculator-form__input-field-no" class="calculator-form__label">No</label>
+            </div>
+          </div>  
+
+          <div class="calculator-form__input-cost">
+            <p class="calculator-form__total">Cost:</p>
+            <p class="calculator-form__total-cost">360</p>
+            <button class="calculator-form__btn">Find out the cost —</button>
+          </div>
+        </form>
 
 
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer" id="contact">
+      <div class="footer__container">
+        <div class="footer__about--container">
+          <p class="footer__about--title">Moroz Roman</p>
+          <p class="footer__about--subtitle">Frontend Developer</p>
+        </div>
+        <div class="footer__address--container">
+          <a href="tel:+380978579842" class="footer__address--phone">+38 (097) 857-98-42</a>
+          <a href="mailto:itmoror@gmail.com" class="footer__address--email">itmoror@gmail.com</a>
+        </div>
+        
+        <ul class="footer__social-icon">
+          <li class="footer__social-icon--item">
+            <a href="" class="footer__social-icon--link">
+              <svg class="footer__social-icon--icon">
+                <use href="./img/img/icon.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-icon--item">
+            <a href="" class="footer__social-icon--link">
+              <svg class="footer__social-icon--icon">
+                <use href="./img/img/icon.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-icon--item">
+            <a href="" class="footer__social-icon--link">
+              <svg class="footer__social-icon--icon">
+                <use href="./img/img/icon.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-icon--item">
+            <a href="" class="footer__social-icon--link">
+              <svg class="footer__social-icon--icon">
+                <use href="./img/img/icon.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        
+      </div>
+
+
+
+
+    </footer>
   </body>
 </html>
