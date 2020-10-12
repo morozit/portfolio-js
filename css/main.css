@@ -33,6 +33,7 @@
 .header, .about__container, .hero, .personal-projects__container, .team-projects__container, .cb-form__container, .calculator, .footer__container {
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
   outline: 1px solid #ff6b08;
 }
 
@@ -1915,6 +1916,12 @@ input[type="radio"].visually-hidden {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container,
+.header,
+.calculator {
   overflow: hidden;
 }
 
