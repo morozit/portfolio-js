@@ -109,6 +109,18 @@
 .offer__video-btn:focus {
   color: $txt-c-light;
   background-color: $c-accent;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+}
+
+.offer__video-btn i {
+  font-size: 8px;
+  margin-right: 7px;
+}
+
+.offer__video-btn:hover,
+.offer__video-btn:focus {
+  color: $txt-c-light;
+  background-color: $c-accent;
   box-shadow: 1px 1px 1px $c-light;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }

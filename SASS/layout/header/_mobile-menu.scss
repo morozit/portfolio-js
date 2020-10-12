@@ -1,0 +1,24 @@
+.mobile-menu {
+  @media screen and (max-width: $tablet-max) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: fixed;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    background-color: $c-light;
+    padding-top: 50px;
+    text-align: center;
+    z-index: 2;
+    transition: all 0.2s linear;
+
+    // TODO:  стилі активного меню
+    &.active {
+      right: 0;
+    }
+  }
+}

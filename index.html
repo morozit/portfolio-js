@@ -21,19 +21,63 @@
     <header class="header" id="header">
       <div class="header__container">
         <nav class="header__nav">
+
+          <!-- TODO: логотип -->
           <a href="#" class="logo">
             <span class="logo__figere"></span>
           </a>
           
-          <!-- Перейменувати header__button-wrap  на  header__nav-->
-          <!--В навігацію поставити  -->
+          <!-- TODO: меню  БУргера / мобільне меню -->
+          <div class="mobile-menu" id="mobile-menu">
+
+            <div class="menu" id="menu">
+              
+              <ul class="menu-list">
+                <li class="menu-list__item">
+                  <a href="#about" class="menu-list__link">About</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#projects" class="menu-list__link">Projects</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#cost-calculator" class="menu-list__link">Cost calculator</a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#contacts" class="menu-list__link">Contacts</a>
+                </li>
+              </ul>
+              <ul class="menu-contact">
+                <li class="menu-contact__item">
+                  <a href="tel:+380978579842" class="menu-contact__phone">+38 (097) 857-98-42</a>
+                </li>
+                <li>
+                  <a href="mailto:itmorozr@gmail.com" class="menu-contact__email">itmorozr@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
           <div class="header__button-wrap">
             <a href="#" class="header__btn">— HIRE ME</a>
             <a href="" class="burger" id="burger">
               <i class="fas fa-bars"></i>
             </a>
-            <!-- <div class="header__burger" id="burger">
-            </div> -->
           </div>
          
         </nav>
@@ -58,7 +102,8 @@
               class="ofer__about-img"
             />
             <p class="ofer__about-me">About me in 2 minutes</p>
-            <button type="button" class="offer__video-btn accent-btn">
+            <!-- TODO: -->
+            <button type="button" class="offer__video-btn accent-btn" id="my-video-btn">
               <i class="fas fa-play"></i>
               Play
             </button>
@@ -473,36 +518,27 @@
     </button>
 
     <!-- Модалки -->
-    <div class="menu-wrapp">
-
-      <!-- TODO: меню  БУргера / мобільне меню -->
-      <div class="mobile-menu" id="mobile-menu">
-        <div class="menu" id="menu">
-          <ul class="menu-list">
-            <li class="menu-list__item">
-              <a href="#about" class="menu-list__link">About</a>
-            </li>
-            <li class="menu-list__item">
-              <a href="#projects" class="menu-list__link">Projects</a>
-            </li>
-            <li class="menu-list__item">
-              <a href="#cost-calculator" class="menu-list__link">Cost calculator</a>
-            </li>
-            <li class="menu-list__item">
-              <a href="#contacts" class="menu-list__link">Contacts</a>
-            </li>
-          </ul>
-          <ul class="menu-contact">
-            <li class="menu-contact__item">
-              <a href="tel:+380978579842" class="menu-contact__phone">+38 (097) 857-98-42</a>
-            </li>
-            <li>
-              <a href="mailto:itmorozr@gmail.com" class="menu-contact__email">itmorozr@gmail.com</a>
-            </li>
-          </ul>
+    <!-- TODO: модалка з відео -->
+    <div class="modals-wrapper">
+      <div class="modal modal-area-bgd" id="my-video-modal">
+        <div class="my-video-container">
+          <i class="fas fa-times modal-close-btn my-video-close-btn"></i>
+          <iframe
+            src="https://player.vimeo.com/video/464795674"
+            width="640"
+            height="360"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+            controls
+          >
+          </iframe>
+          <!-- <video class="my-video-content" src="https://vimeo.com/337234617" controls></video> -->
         </div>
       </div>
-  </div>  
+
+
+  
 
 
 
