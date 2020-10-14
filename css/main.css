@@ -265,6 +265,7 @@ template {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -463,12 +464,28 @@ a {
     background-color: #ffffff;
     padding-top: 50px;
     text-align: center;
-    z-index: 2;
+    z-index: 98;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
   }
-  .mobile-menu.active {
+  .mobile-menu.modal-active {
     right: 0;
+  }
+}
+
+.menu {
+  color: #ff6b08;
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .menu-list {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1199px) {
+  .menu-list {
+    margin-bottom: 120px;
   }
 }
 
@@ -486,8 +503,22 @@ a {
   }
 }
 
-.menu-list__item:not(:last-child) {
-  margin-right: 20px;
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .menu-list__item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1199px) {
+  .menu-list__item:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-list__item:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 
 .menu-list__link {
@@ -501,8 +532,7 @@ a {
   transition: color 0.2s linear;
 }
 
-.menu-list__link:hover,
-.menu-list__link:focus {
+.menu-list__link:hover, .menu-list__link:focus {
   color: #ff6b08;
 }
 
@@ -532,22 +562,6 @@ a {
   color: #141d2d;
 }
 
-.menu.active .menu-list__item {
-  margin-bottom: 35px;
-  margin-right: 0;
-}
-
-.menu.active .menu-list__link {
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #4f5b70;
-}
-
-/* Burger strat */
-/* Burger END */
 .burger {
   width: 30px;
   height: 30px;
@@ -578,6 +592,7 @@ a {
   color: #ffffff;
 }
 
+/* Burger END */
 /* ABOUT PAGE */
 .about__background {
   background-color: #ffffff;
@@ -866,6 +881,18 @@ a {
   color: #ff6b08;
   padding: 11px 40px;
   margin-bottom: 35px;
+}
+
+.offer__video-btn i {
+  font-size: 8px;
+  margin-right: 7px;
+}
+
+.offer__video-btn:hover,
+.offer__video-btn:focus {
+  color: #ffffff;
+  background-color: #ff6b08;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .offer__video-btn i {
@@ -2059,5 +2086,52 @@ input[type="radio"].visually-hidden {
   width: 30px;
   height: 30px;
   color: #ff6b08;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 29, 45, 0.8);
+  z-index: 11;
+  overflow: auto;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-close-btn {
+  font-size: 18px;
+  position: absolute;
+  color: #ff6b08;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .modal-close-btn {
+    top: 46px;
+    right: 19px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1199px) {
+  .modal-close-btn {
+    top: 46px;
+    right: 19px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-close-btn {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -28,10 +28,12 @@
           </a>
           
           <!-- TODO: меню  БУргера / мобільне меню -->
-          <div class="mobile-menu" id="mobile-menu">
+          <div class="mobile-menu modal-area-bgd" id="mobile-menu">
 
-            <div class="menu" id="menu">
-              
+            <div class="menu modal-area-content" id="menu">
+
+              <i class="fas fa-times modal-close-btn"></i>
+
               <ul class="menu-list">
                 <li class="menu-list__item">
                   <a href="#about" class="menu-list__link">About</a>
@@ -515,14 +517,14 @@
     <!-- Модалки -->
     <!-- TODO: modals-wrapper -->
     
-    <div class="modals-wrapper" id="modals-wrapper">
+    <!-- <div class="modals-wrapper" id="modals-wrapper"> -->
 
-<!-- TODO: модалка з відео -->
+      <!-- TODO: модалка з відео -->
       <div class="modal modal-area-bgd" id="my-video-modal">
         <div class="my-video-container">
           <i class="fas fa-times modal-close-btn my-video-close-btn"></i>
-          <iframe
-          src="/video.mp4"
+          <!-- <iframe
+          src="Сплав по Дністру 2017.mp4"
             width="320"
             height="100%"
             frameborder="0"
@@ -530,16 +532,25 @@
             allowfullscreen
             controls
           >
+          </iframe> -->
+          <iframe 
+            allow="autoplay; fullscreen" 
+            width="300"
+            height="100%" 
+            src="https://www.youtube.com/embed/B9gvM_-WYwo" 
+            frameborder="0" 
+            allowfullscreen
+          >
           </iframe>
         </div>
       </div>
       
-    </div>
+    <!-- </div> -->
   
 
 
 
-    <script src="./js/main.js" type="module"></script>
+    <!-- <script src="./js/main.js" type="module"></script> -->
     <script src="./js/choices.min.js" type="module"></script>
     <script src="./js/calculator.js" type="module"></script>
     <script src="./js/modals.js" type="module"></script>

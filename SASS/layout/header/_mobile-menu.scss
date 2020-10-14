@@ -13,11 +13,11 @@
     background-color: $c-light;
     padding-top: 50px;
     text-align: center;
-    z-index: 2;
+    z-index: 98;
     transition: all 0.2s linear;
 
     // TODO:  стилі активного меню
-    &.active {
+    &.modal-active {
       right: 0;
     }
   }

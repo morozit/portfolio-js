@@ -3,31 +3,54 @@
   // display: flex;
 }
 .menu-list {
+  @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    margin-bottom: 120px;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-
-.menu-list__item:not(:last-child) {
-  margin-right: 20px;
+.menu-list {
+  &__item {
+    @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+      &:not(:last-child) {
+        margin-bottom: 35px;
+      }
+    }
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      &:not(:last-child) {
+        margin-bottom: 45px;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
 }
 
-.menu-list__link {
-  color: $txt-c-grey;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-  transition: color 0.2s linear;
-}
-.menu-list__link:hover,
-.menu-list__link:focus {
-  color: $txt-c-accent;
-}
+.menu-list {
+  &__link {
+    color: $txt-c-grey;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    transition: color 0.2s linear;
+  }
 
+  &__link:hover,
+  &__link:focus {
+    color: $txt-c-accent;
+  }
+}
 .menu-contact {
   @media screen and (min-width: $desktop) {
     display: none;
@@ -56,16 +79,16 @@
 
 // TODO:  стилі активного меню
 
-.menu.active .menu-list__item {
-  margin-bottom: 35px;
-  margin-right: 0;
-}
+// .menu.modal-active .menu-list__item {
+//   margin-bottom: 35px;
+//   margin-right: 0;
+// }
 
-.menu.active .menu-list__link {
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: $txt-c-grey;
-}
+// .menu.modal-active .menu-list__link {
+//   font-weight: bold;
+//   font-size: 15px;
+//   line-height: 18px;
+//   letter-spacing: 0.05em;
+//   text-transform: uppercase;
+//   color: $txt-c-grey;
+// }

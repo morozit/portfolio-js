@@ -28,9 +28,9 @@
 //   background-color: var(--c-accent);
 // }
 
-// .header__burger span {
+// .burger i {
 //   position: absolute;
-//   background-color: var(--c-grey-light);
+//   background-color: $c-grey-light;
 //   width: 10px;
 //   height: 2px;
 //   top: 14px;
@@ -38,10 +38,10 @@
 //   transition: all 0.2s linear;
 // }
 
-// .header__burger::before,
-// .header__burger::after {
+// .burger::before,
+// .burger::after {
 //   content: "";
-//   background-color: var(--c-grey-light);
+//   background-color: $c-grey-light;
 //   position: absolute;
 //   width: 10px;
 //   height: 2px;
@@ -49,27 +49,27 @@
 //   transition: all 0.2s linear;
 // }
 
-// .header__burger::before {
+// .burger::before {
 //   top: 10px;
 // }
 
-// .header__burger::after {
+// .burger::after {
 //   bottom: 10px;
 // }
 
-// .header__burger.active::before {
+// .burger.modal-active::before {
 //   transform: rotate(45deg);
 //   background-color: #fff;
 //   top: 14px;
 // }
 
-// .header__burger.active::after {
+// .burger.modal-active::after {
 //   transform: rotate(-45deg);
 //   background-color: #fff;
 //   bottom: 14px;
 // }
 
-// .header__burger.active span {
+// .burger.modal-active i {
 //   transform: scale(0);
 // }
 

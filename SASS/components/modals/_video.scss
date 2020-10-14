@@ -1,0 +1,13 @@
+.my-video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+.my-video-close-btn {
+  background: $c-light;
+  color: $c-dark;
+  padding: 10px 14px;
+}

@@ -1,4 +1,4 @@
-const mobileMenuBtn = document.querySelector('#mobile-menu-btn');
+const burger = document.querySelector('#burger');
 const myVideoBtn = document.querySelector('#my-video-btn');
 
 const myVideoModal = document.querySelector('#my-video-modal');
@@ -16,7 +16,7 @@ enableCloseModalOnBgdClick();
 hideModalOnMobileMenuElementsClick();
 
 const modals = [mobileMenu, myVideoModal];
-const buttons = [mobileMenuBtn, myVideoBtn];
+const buttons = [burger, myVideoBtn];
 
 buttons.forEach((btn, index) => {
   const projectModal = modals[index];
@@ -66,7 +66,7 @@ function hideModal() {
 
 function hideModalOnMobileMenuElementsClick() {
   const MOBILE_MENU_ITEM_CLOSE_DELAY = 150;
-  const menuElements = document.querySelectorAll('.mobile-menu-item');
+  const menuElements = document.querySelectorAll('.menu-list__item');
 
   if (menuElements.length) {
     menuElements.forEach(container => {
