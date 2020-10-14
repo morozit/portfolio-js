@@ -2036,7 +2036,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  display: block;
   outline: none;
   color: #ffffff;
   background-color: transparent;
@@ -2048,7 +2047,7 @@ input[type="radio"].visually-hidden {
 .accent-btn:hover, .scroll-btn:hover, .accent-btn:focus, .scroll-btn:focus {
   -webkit-box-shadow: 1px 1px 1px #ff6b08;
           box-shadow: 1px 1px 1px #ff6b08;
-  text-shadow: 1px 1px 1px #000001;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .scroll-btn {
@@ -2070,7 +2069,7 @@ input[type="radio"].visually-hidden {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border-color: #ff6b08;
+  border: 2px solid #ff6b08;
 }
 
 .scroll-btn__style {
@@ -2133,5 +2132,32 @@ input[type="radio"].visually-hidden {
   .modal-close-btn {
     display: none;
   }
+}
+
+.my-video-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 10px;
+}
+
+.my-video-close-btn {
+  background-color: #ffffff;
+  color: #ff6b08;
+  padding: 10px 14px;
+}
+
+.my-video-content {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
