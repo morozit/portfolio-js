@@ -32,7 +32,7 @@
 
             <div class="menu modal-area-content" id="menu">
 
-              <i class="fas fa-times modal-close-btn"></i>
+              <i class="fas fa-times modal-close-btn mobile-menu__exit"></i>
 
               <ul class="menu-list">
                 <li class="menu-list__item">
@@ -503,11 +503,14 @@
       <a href="#header"><i class="fas fa-angle-double-up scroll-btn__style"></i></a>
     </button>
 
-    <!-- Модалки -->
+    <!-- ! Модалки -->
+
+
     <!-- TODO: modals-wrapper -->
-    
-    <!-- <div class="modals-wrapper" id="modals-wrapper"> -->
+        <!-- <div class="modals-wrapper" id="modals-wrapper"> -->
     <!-- </div> -->
+
+
     <!-- TODO: модалка з відео -->
     <div class="modal modal-area-bgd" id="my-video-modal">
       <div class="my-video-container ">
@@ -515,8 +518,8 @@
         <video
         class="modal-area-content"
         src="Сплав по Дністру 2017.mp4"
-          width="65%"
-          height="100%"
+        width="65%"
+
           frameborder="0"
           allow="autoplay; fullscreen"
           allowfullscreen
@@ -537,7 +540,21 @@
     </div>
       
 
-  
+    <!-- TODO: модалка REQUEST RECEIVED -->
+
+    <div class="modal modal-request-received modal-area-bgd" id="request-received">
+      <div class="request-received-container modal-area-content">
+        <i class="fas fa-times modal-close-btn"></i>
+        <h3 class="request-received-title">{Thanks}</h3>
+        <p class="request-received-primary-msg">
+          I've received your request/
+        </p>
+        <p class="request-received-secondary-msg">
+          I will contact you soon =)
+        </p>
+      </div>
+    </div>
+      
 
 
 

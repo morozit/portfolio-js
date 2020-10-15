@@ -21,4 +21,18 @@
       right: 0;
     }
   }
+  &__exit {
+    @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+      top: 46px;
+      right: 19px;
+    }
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      top: 46px;
+      right: 19px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
 }

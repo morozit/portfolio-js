@@ -1,27 +1,24 @@
-// .modal-video {
-//   position: fixed;
-//   width: 100%;
-//   height: 100%;
-//   top: 0;
-//   left: 0;
-//   background-color: $modal-bgd-dark;
-//   z-index: 11;
-//   overflow: auto;
-//   transition: all 0.2s linear;
-//   pointer-events: none;
-//   opacity: 0;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
+.modal-video {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $modal-bgd-dark;
+  z-index: 11;
+  overflow: auto;
+  transition: all 0.2s linear;
+  pointer-events: none;
+  opacity: 0;
+}
 
 .my-video-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  // height: 100%;
-  padding: 20px 10px;
+  height: 100%;
+  padding: 40px 10px;
 }
 
 .my-video-close-btn {
@@ -29,6 +26,13 @@
   color: $c-accent;
 
   padding: 10px 14px;
+  @media screen and (max-width: $tablet-max) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 46px;
+    right: 19px;
+  }
 }
 
 .my-video-content {
