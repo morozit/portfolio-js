@@ -2159,10 +2159,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   height: 100%;
   padding: 40px 10px;
 }
@@ -2171,19 +2167,8 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   color: #ff6b08;
   padding: 10px 14px;
-}
-
-@media screen and (max-width: 1199px) {
-  .my-video-close-btn {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .my-video-close-btn {
-    top: 46px;
-    right: 19px;
-  }
+  top: 16px;
+  right: 16px;
 }
 
 .my-video-content {
