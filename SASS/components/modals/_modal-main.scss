@@ -24,3 +24,9 @@
   color: $c-accent;
   cursor: pointer;
 }
+
+.project-modal-img {
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
