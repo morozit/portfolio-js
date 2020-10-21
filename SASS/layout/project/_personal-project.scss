@@ -6,16 +6,16 @@
     @extend %container;
 
     @media screen and (min-width: $mobile) {
-      padding-top: 55px;
-      padding-bottom: 55px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
     @media screen and (min-width: $tablet-min) {
-      padding-top: 65px;
-      padding-bottom: 90px;
+      padding-top: 45px;
+      padding-bottom: 60px;
     }
     @media screen and (min-width: $desktop) {
-      padding-top: 130px;
-      padding-bottom: 200px;
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
   }
   &__title {
@@ -48,11 +48,38 @@
   }
 }
 
+//
+.personal-project {
+  &__wraper {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    border-bottom: 1px solid $c-grey-blue;
+    margin-bottom: 30px;
+  }
+
+  &__item:not(:nth-child(2n)) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 35px;
+    }
+  }
+}
+
 .personal-project-item-container {
   padding-top: 40px;
   background: $c-dark-blue;
-  border-radius: 5px 5px 0 0;
+  border-radius: 8px 8px 0 0;
   position: relative;
+}
+
+.projet-item-dot-container {
+  display: flex;
+  position: absolute;
+  top: 17px;
+  left: 20px;
 }
 
 .personal-project-name {
@@ -66,22 +93,6 @@
 
 .personal-project-img {
   width: 100%;
-}
-
-.projet-item-dot-container {
-  display: flex;
-  position: absolute;
-  top: 17px;
-  left: 20px;
-}
-
-.personal-project-item {
-  border-bottom: 1px solid $c-grey-blue;
-  margin-bottom: 30px;
-}
-
-.personal-project-item:last-child {
-  margin-bottom: 0;
 }
 
 .projet-item-dot {
