@@ -35,6 +35,7 @@
       line-height: 42px;
       margin-bottom: 40px;
       text-align: left;
+      width: 265px;
     }
     @media screen and (min-width: $tablet-min) {
       font-size: 50px;
@@ -42,6 +43,7 @@
       margin-bottom: 50px;
       justify-content: start;
       text-align: left;
+      width: 100%;
     }
     @media screen and (min-width: $desktop) {
       font-size: 70px;
@@ -49,7 +51,7 @@
       margin-bottom: 55px;
       justify-content: start;
       text-align: left;
-      width: 550px;
+      width: 615px;
     }
   }
 
@@ -66,11 +68,36 @@
     margin: 0;
     // background: $c-dark-blue;
     // padding: 4px 9px;
+    @media screen and (min-width: $tablet-min) {
+      font-size: 36px;
+      line-height: 43px;
+
+      display: inline-block;
+      width: 450px;
+    }
   }
 
-  &__descr span {
+  &__descr-mob {
+    @media screen and (min-width: $tablet-min) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__descr-tablet {
+    @media screen and (max-width: $mobile-max) {
+      display: none;
+      visibility: hidden;
+    }
+
+    @media screen and (min-width: $tablet-min) {
+      display: inline-block;
+    }
+  }
+
+  &__descr--span {
     background: $c-dark-blue;
-    padding: 4px 0px;
+    padding: 4px 9px;
   }
 
   &__img--container {
@@ -78,6 +105,7 @@
     justify-content: center;
     width: 100%;
     margin-bottom: 20px;
+    position: relative;
   }
 
   &__img--text {
@@ -89,6 +117,20 @@
     writing-mode: tb-rl;
     margin: auto;
     position: relative;
+
+    @media screen and (min-width: $tablet-min) {
+      position: absolute;
+      right: -27px;
+      top: -71px;
+      font-size: 183px;
+      line-height: 240px;
+      z-index: 25;
+      width: 361px;
+      height: 390px;
+    }
+
+    // @media screen and (min-width: $desktop) {
+    // }
   }
 
   &__img {
@@ -97,6 +139,10 @@
     position: absolute;
     left: -35px;
     top: 55px;
+    @media screen and (min-width: $tablet-min) {
+      width: 361px;
+      height: 390px;
+    }
   }
 
   &__text {
@@ -105,9 +151,16 @@
     line-height: 150%;
     color: $c-dark;
     margin: 0 0 30px 0;
+    @media screen and (min-width: $tablet-min) {
+      width: 330px;
+    }
   }
 
   &__text:last-child {
     margin-bottom: 0;
+    width: 285px;
+    @media screen and (min-width: $tablet-min) {
+      margin-bottom: 85px;
+    }
   }
 }
