@@ -172,12 +172,17 @@
           <h3 class="base__title-style about__title">
             I code things from scratch_
           </h3>
-          <!-- <p class="about__descr">[and help to create great web apps]</p> -->
-          <p class="about__descr">
-            <span class="about__descr--span">[and help to</spandescr--span>
+
+          <p class="about__descr about__descr-mob">
+            <span class="about__descr--span">[and help to</span>
             <span class="about__descr--span">create great web</span>
             <span class="about__descr--span">apps]</span>
           </p>
+          <p class="about__descr about__descr-tablet">
+            <span class="about__descr--span">[and help to create</span>
+            <span class="about__descr--span">great web apps]</span>
+          </p>
+
           <div class="about__img--container">
             <p class="about__img--text">
               WEB
@@ -356,99 +361,124 @@
         </div>
       </section>
       <section class="calculator" id="cost-calculator">
+        <div class="calculator__container">
+          <div class="calculator__deasctop-wrap">
 
-        <div class="calculator__deasctop-wrap">
-          <h2 class="calculator__title">Calculate_ the cost of a future project</h2>
-          <p class="calculator__selected-text">This is an approximate calculation. </p>
-          <div class="calculator__img--wrap">
-            <img src="./img/img/calculator.svg" class="calculator__img" alt="calculator" />
-            <p class="calculator__description">/ The final cost depends on the technical requirements, terms, specifics of your
-              project.</p>
+            <h2 class="calculator__title">Calculate_ <span class="calculator__title-span">the cost of a future project</span>
+            </h2>
+            <p class="calculator__descr calculator__descr-mob">
+              <span class="calculator__descr--span">This is an</span>
+              <span class="calculator__descr--span">approximate</span>
+              <span class="calculator__descr--span">calculation</span>
+            </p>
+            <p class="calculator__descr calculator__descr-tablet">
+              <span class="calculator__descr--span">This is an approximate</span>
+              <span class="calculator__descr--span">calculation</span>
+            </p>
+
+
+            <!-- <p class="calculatorlected-text calculator__selected-text--mob">
+              <span class="calculator__selected-text--span">This is an</span>
+              <span class="calculator__selected-text--span">approximate</span>
+              <span class="calculator__selected-text--span">calculation</span>
+            </p>
+            <p class="calculator__selected-text calculator__selected-text--tablet">
+              <span class="calculator__selected-text--span">This is an approximate</span>
+              <span class="calculator__selected-text--span">calculation</span>
+            </p> -->
+
+
+            <!-- <p class="calculator__selected-text">This is an approximate calculation. </p> -->
+            <div class="calculator__img--wrap">
+              <img src="./img/img/calculator.svg" class="calculator__img" alt="calculator" />
+              <p class="calculator__description">/ The final cost depends on the technical requirements, terms, specifics of your
+                project.</p>
+            </div>
           </div>
-        </div>
-        
+          
 
-        <!-- ФОРМА -->
-        <form action="" class="calculator-form">
-          <div class="calculator-form__input">
-            <label for="calculator-form-website-type" class="calculator-form__title">What you want me to do:</label>
-              <select name="website-type" id="calculator-form-website-type" class="calculator-form__select">
-                <option value="landing-page:100">Landing page</option>
-                <option value="website:200" selected>Website</option>
-                <option value="cms:300">CMS</option>
-                <option value="portal:400">Portal</option>
-                <option value="e-shop:500">E-shop</option>
+          <!-- ФОРМА -->
+          <form action="" class="calculator-form">
+            <div class="calculator-form__input">
+              <label for="calculator-form-website-type" class="calculator-form__title">What you want me to do:</label>
+                <select name="website-type" id="calculator-form-website-type" class="calculator-form__select">
+                  <option value="landing-page:100">Landing page</option>
+                  <option value="website:200" selected>Website</option>
+                  <option value="cms:300">CMS</option>
+                  <option value="portal:400">Portal</option>
+                  <option value="e-shop:500">E-shop</option>
+                </select>
+            </div>
+
+            <div class="calculator-form__input">
+              <label for="calculator-form-technologies" class="calculator-form__title"
+                >Choose preferred technologies:</label
+              >
+              <select name="technologies" id="calculator-form-technologies" class="calculator-form__select" multiple>
+                <option value="html:200" selected>HTML</option>
+                <option value="css:300" selected>CSS</option>
+                <option value="js:400">Java Script</option>
+                <option value="react:400">React</option>
+                <option value="node:400">Node</option>
               </select>
-          </div>
-
-          <div class="calculator-form__input">
-            <label for="calculator-form-technologies" class="calculator-form__title"
-              >Choose preferred technologies:</label
-            >
-            <select name="technologies" id="calculator-form-technologies" class="calculator-form__select" multiple>
-              <option value="html:200" selected>HTML</option>
-              <option value="css:300" selected>CSS</option>
-              <option value="js:400">Java Script</option>
-              <option value="react:400">React</option>
-              <option value="node:400">Node</option>
-            </select>
-          </div>
-
-          <div class="calculator-form__input">
-            <label class="calculator-form__title">Personal account and shopping cart:</label>
-            <div class="calculator-form__radio-container" id="calculator-form__input-card">
-              <input
-                type="radio"
-                class="calculator-form__input-field"
-                id="calculator-form__input-yes"
-                name="cart"
-                value="yes"
-              />
-              <label for="calculator-form__input-yes" class="calculator-form__label">Yes</label>
-
-              <input
-                checked
-                type="radio"
-                class="calculator-form__input-field"
-                id="calculator-form__input-no"
-                name="cart"
-                value="no"
-              />
-              <label for="calculator-form__input-no" class="calculator-form__label">No</label>
             </div>
-          </div>
 
-          <div class="calculator-form__input">
-            <label class="calculator-form__title">Requests reception on your email:</label>
-            <div class="calculator-form__radio-container" id="calculator-form__input-reception">
-              <input
-                type="radio"
-                class="calculator-form__input-field"
-                id="calculator-form__input-field-yes"
-                name="reception"
-                value="yes"
-              />
-              <label for="calculator-form__input-field-yes" class="calculator-form__label">Yes</label>
+            <div class="calculator-form__input">
+              <label class="calculator-form__title">Personal account and shopping cart:</label>
+              <div class="calculator-form__radio-container" id="calculator-form__input-card">
+                <input
+                  type="radio"
+                  class="calculator-form__input-field"
+                  id="calculator-form__input-yes"
+                  name="cart"
+                  value="yes"
+                />
+                <label for="calculator-form__input-yes" class="calculator-form__label">Yes</label>
 
-              <input
-                checked
-                type="radio"
-                class="calculator-form__input-field"
-                id="calculator-form__input-field-no"
-                name="reception"
-                value="no"
-              />
-              <label for="calculator-form__input-field-no" class="calculator-form__label">No</label>
+                <input
+                  checked
+                  type="radio"
+                  class="calculator-form__input-field"
+                  id="calculator-form__input-no"
+                  name="cart"
+                  value="no"
+                />
+                <label for="calculator-form__input-no" class="calculator-form__label">No</label>
+              </div>
             </div>
-          </div>  
 
-          <div class="calculator-form__input-cost">
-            <p class="calculator-form__total">Cost:</p>
-            <p class="calculator-form__total-cost"></p>
-            <button class="calculator-form__btn">Find out the cost —</button>
-          </div>
-        </form>
+            <div class="calculator-form__input">
+              <label class="calculator-form__title">Requests reception on your email:</label>
+              <div class="calculator-form__radio-container" id="calculator-form__input-reception">
+                <input
+                  type="radio"
+                  class="calculator-form__input-field"
+                  id="calculator-form__input-field-yes"
+                  name="reception"
+                  value="yes"
+                />
+                <label for="calculator-form__input-field-yes" class="calculator-form__label">Yes</label>
 
+                <input
+                  checked
+                  type="radio"
+                  class="calculator-form__input-field"
+                  id="calculator-form__input-field-no"
+                  name="reception"
+                  value="no"
+                />
+                <label for="calculator-form__input-field-no" class="calculator-form__label">No</label>
+              </div>
+            </div>  
+
+            <div class="calculator-form__input-cost">
+              <p class="calculator-form__total">Cost:</p>
+              <p class="calculator-form__total-cost"></p>
+              <button class="calculator-form__btn">Find out the cost —</button>
+            </div>
+          </form>
+
+        </div>  
 
       </section>
     </main>
