@@ -1,12 +1,14 @@
 .calculator-form {
   background-color: $c-light;
   color: $txt-c-dark;
+  z-index: 10;
 
   @media screen and (min-width: $mobile) {
     padding: 30px 25px;
   }
   @media screen and (min-width: $tablet-min) {
     padding: 60px 80px;
+    z-index: 10;
   }
   @media screen and (min-width: $desktop) {
     width: 385px;

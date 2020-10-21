@@ -1087,6 +1087,7 @@ a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    text-align: start;
   }
 }
 
@@ -1222,9 +1223,7 @@ a {
     font-size: 50px;
     line-height: 60px;
     margin-bottom: 50px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    text-align: start;
   }
 }
 
@@ -1233,9 +1232,6 @@ a {
     font-size: 70px;
     line-height: 84px;
     margin-bottom: 55px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
     width: 550px;
   }
 }
@@ -1546,7 +1542,7 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
-  z-index: 10;
+  z-index: 9;
 }
 
 @media screen and (min-width: 320px) {
@@ -1578,6 +1574,7 @@ a {
         -ms-flex-pack: start;
             justify-content: start;
     text-align: left;
+    width: 630px;
     margin-bottom: 48px;
   }
 }
@@ -1593,6 +1590,9 @@ a {
 
 @media screen and (min-width: 320px) and (max-width: 639px) {
   .calculator__selected-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1604,37 +1604,72 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    max-width: 270px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 640px) {
   .calculator__selected-text {
-    max-width: 500px;
+    font-size: 36px;
+    line-height: 150%;
+    width: 530px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .calculator__img--wrap {
+    width: 550px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 49px;
+    margin-bottom: 45px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .calculator__selected-text {
-    max-width: 600px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  .calculator__img--wrap {
+    margin-top: 55px;
   }
 }
 
-.calculator__calculator-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  margin-bottom: 20px;
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .calculator__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .calculator__img {
+    position: absolute;
+    width: 344px;
+    right: -50px;
+    top: -48px;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .calculator__img {
+    right: -150px;
+    top: -80px;
+  }
 }
 
 .calculator__description {
@@ -1652,20 +1687,21 @@ a {
 
 @media screen and (min-width: 640px) {
   .calculator__description {
-    max-width: 200px;
-    margin-bottom: 50px;
+    width: 330px;
+    text-align: left;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .calculator__description {
-    max-width: 3600px;
+    width: 348px;
   }
 }
 
 .calculator-form {
   background-color: #ffffff;
   color: #141d2d;
+  z-index: 10;
 }
 
 @media screen and (min-width: 320px) {
@@ -1677,6 +1713,7 @@ a {
 @media screen and (min-width: 640px) {
   .calculator-form {
     padding: 60px 80px;
+    z-index: 10;
   }
 }
 
@@ -2139,6 +2176,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 30px;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.personal-project-btn {
+  padding: 15px 30px 15px 10px;
+  margin-bottom: 30px;
 }
 
 .modal-video {
