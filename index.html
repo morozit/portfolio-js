@@ -72,30 +72,39 @@
     <main>
       <!-- Секція героя -->
       <section class="hero">
-          <div class="ofer">
-            <h1 class="ofer__name">[Moroz Roman]</h1>
-            <h2 class="ofer__title">{Frontend} <span class="ofer__title-tab">_DEVELOPER</span></h2>
-            <p class="ofer__description">
-              / Using HTML, CSS, JavaScript, React Native and Node.js I help to
-              build websites, small and medium web apps for business
-            </p>
-            <button type="button" class="ofer__btn btn">
-              See my recent works —
-            </button>
-            <img
-              src="./img/img/my-photo.png"
-              alt="Moroz Roman"
-              class="ofer__about-img"
-            />
-            <p class="ofer__about-me">About me in 2 minutes</p>
-            <!-- TODO: -->
-            <button type="button" class="offer__video-btn accent-btn" id="my-video-btn">
-              <i class="fas fa-play"></i>
-              Play
-            </button>
+          <div class="developer">
+            <div class="developer__frontend--wrap">
+              <h1 class="developer__name">[Moroz Roman]</h1>
+              <h2 class="developer__title">{Frontend} <span class="developer__title-tab">_DEVELOPER</span></h2>
+              <p class="developer__description">
+                / Using HTML, CSS, JavaScript, React Native and Node.js I help to
+                build websites, small and medium web apps for business
+              </p>
+              <button type="button" class="developer__btn btn">
+                See my recent works —
+              </button>
+            </div>
+            <!--  TODO: міні блок (фото з кнопкою відео), медіа від планшета -->
+            <div class="developer__about--wrap">
+              <img
+                src="./img/img/my-photo.png"
+                alt="Moroz Roman"
+                class="developer__about-img"
+              />
+
+              <div class="developer__about-me--wrap">
+                <p class="developer__about-me">About me in 2 minutes</p>
+                
+                <button type="button" class="developer__video-btn accent-btn" id="my-video-btn">
+                  <i class="fas fa-play"></i>
+                  Play
+                </button>
+              </div>
+            </div>
+
             <img
               src="./img/img/laptop.svg"
-              class="ofer__laptop-img"
+              class="developer__laptop-img"
               alt="laptop"
             />
             
@@ -211,7 +220,7 @@
           <h3 class="personal-projects__title">
             My personal _projects
           </h3>
-          <ul class="personal-project__wraper">
+          <ul class="personal-project__wrap">
               <!-- карточка -->
             <li class="personal-project__item">
               <div class="personal-project-item-container">
@@ -300,7 +309,7 @@
         <div class="team-projects__container">
           <span class="team-projects__title--bgd">TEAM</span>
           <h3 class="team-projects__title">Teamwork _projects</h3>
-          <ul class="team-project__wraper">
+          <ul class="team-project__wrap">
             <!-- карточка -->
             <li class="team-project__item">
               <div class="personal-project-item-container">

@@ -95,7 +95,7 @@
 }
 
 .team-project {
-  &__wraper {
+  &__wrap {
     @media screen and (min-width: $desktop) {
       display: flex;
       flex-wrap: wrap;

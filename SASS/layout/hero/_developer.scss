@@ -1,4 +1,4 @@
-.ofer {
+.developer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,13 @@
   margin-right: auto;
 }
 
-.ofer__name {
+.developer__frontend--wrap {
+  @media screen and (min-width: $desktop) {
+    order: 2;
+  }
+}
+
+.developer__name {
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -33,7 +39,7 @@
   }
 }
 
-.ofer__title {
+.developer__title {
   font-weight: bold;
   font-size: 35px;
   line-height: 42px;
@@ -55,13 +61,13 @@
   }
 }
 
-.ofer__title-tab {
+.developer__title-tab {
   @media screen and (min-width: $tablet-min) {
     margin-left: 30px;
   }
 }
 
-.ofer__description {
+.developer__description {
   font-size: 16px;
   line-height: 150%;
   max-width: 390px;
@@ -72,16 +78,51 @@
   }
 }
 
-.ofer__btn {
+.developer__btn {
   margin-bottom: 35px;
 }
 
-.ofer__about-img {
-  margin-bottom: 18px;
-  width: 180px;
+.developer__about--wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: $tablet-min) {
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0px;
+    order: 3;
+  }
 }
 
-.ofer__about-me {
+.developer__about-img {
+  display: flex;
+  margin-bottom: 18px;
+  width: 180px;
+  @media screen and (min-width: $tablet-min) {
+    margin-right: 25px;
+  }
+}
+
+.developer__about-me--wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+  @media screen and (min-width: $tablet-min) {
+    margin-top: -30px;
+    margin-bottom: 0px;
+    align-items: start;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 0px;
+    align-items: normal;
+  }
+}
+
+.developer__about-me {
+  display: flex;
   font-weight: bold;
   font-size: 15px;
   line-height: 140%;
@@ -90,42 +131,44 @@
   margin-bottom: 18px;
 }
 
-.offer__video-btn {
+.developer__video-btn {
   display: flex;
   align-items: center;
   background-color: transparent;
   border: 2px solid $c-accent;
   color: $txt-c-accent;
   padding: 11px 40px;
-  margin-bottom: 35px;
+  @media screen and (max-width: $mobile-max) {
+    margin-bottom: 35px;
+  }
 }
 
-.offer__video-btn i {
+.developer__video-btn i {
   font-size: 8px;
   margin-right: 7px;
 }
 
-.offer__video-btn:hover,
-.offer__video-btn:focus {
+.developer__video-btn:hover,
+.developer__video-btn:focus {
   color: $txt-c-light;
   background-color: $c-accent;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.offer__video-btn i {
+.developer__video-btn i {
   font-size: 8px;
   margin-right: 7px;
 }
 
-.offer__video-btn:hover,
-.offer__video-btn:focus {
+.developer__video-btn:hover,
+.developer__video-btn:focus {
   color: $txt-c-light;
   background-color: $c-accent;
   box-shadow: 1px 1px 1px $c-light;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.ofer__laptop-img {
+.developer__laptop-img {
   width: 250px;
   margin-bottom: 40px;
 }

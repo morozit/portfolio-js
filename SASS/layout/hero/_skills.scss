@@ -6,6 +6,9 @@
   // width: 236px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: $desktop) {
+    order: 1;
+  }
 }
 
 .experience__title {
