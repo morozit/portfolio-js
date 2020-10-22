@@ -185,15 +185,20 @@
     @media screen and (min-width: $tablet-min) {
       width: 330px;
     }
+    @media screen and (min-width: $desktop) {
+      width: 400px;
+    }
   }
 
   &__text:last-child {
     margin-bottom: 0;
-    width: 285px;
     @media screen and (min-width: $tablet-min) {
+      width: 285px;
       margin-bottom: 100px;
     }
+
     @media screen and (min-width: $desktop) {
+      width: 400px;
       margin-bottom: 0px;
     }
   }
