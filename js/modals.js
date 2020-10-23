@@ -1,34 +1,52 @@
-// const projectModalFullStack = document.querySelector('#personal-project-full-stack');
-// const projectModalWeddingProject = document.querySelector('#personal-project-wedding-project');
-// const projectModaProTest = document.querySelector('#personal-project-pro-test');
-// const projectModalProjectGoit = document.querySelector('#personal-project-goit');
+// PROJECT-MODAL
 
-// const projectModalQuestify = document.querySelector('#team-project-questify');
-// const projectModalItTest = document.querySelector('#team-project-it-test');
+const projectP1 = document.querySelector('#personal-p1');
+const projectP2 = document.querySelector('#personal-p2');
+const projectP3 = document.querySelector('#personal-p3');
+const projectP4 = document.querySelector('#personal-p4');
 
-// const projectOpenBtnFullStack = document.querySelector('#personal-project-full-stack-btn');
-// const projectOpenBtnWeddingProject = document.querySelector('#personal-project-wedding-project-btn');
-// const projectOpenBtnProTest = document.querySelector('#personal-project-pro-test-btn');
-// const projectOpenBtnProjectGoit = document.querySelector('#personal-project-goit-btn');
+const projectModalTeamP1 = document.querySelector('#team-p1');
+const projectModalTeamP2 = document.querySelector('#team-p2');
 
-// const projectOpenBtnQuestify = document.querySelector('#team-project-questify-btn');
-// const projectOpenBtnItTest = document.querySelector('#team-project-it-test-btn');
+const projectOpenBtnP1 = document.querySelector('#personal-p1-btn');
+const projectOpenBtnP2 = document.querySelector('#personal-p2-btn');
+const projectOpenBtnP3 = document.querySelector('#personal-p3-btn');
+const projectOpenBtnP4 = document.querySelector('#personal-p4-btn');
 
-// const projectModals = [ projectModalFullStack, projectModalWeddingProject, projectModaProTest, projectModalProjectGoit, projectModalQuestify, projectModalItTest];
-// const projectBtns = [ projectOpenBtnFullStack, projectOpenBtnWeddingProject, projectOpenBtnProTest, projectOpenBtnProjectGoit, projectOpenBtnQuestify, projectOpenBtnItTest];
+const projectOpenBtnTeamP1 = document.querySelector('#team-p1-btn');
+const projectOpenBtnTeamP2 = document.querySelector('#team-p2-btn');
 
-// projectBtns.forEach((btn, index) => {
-//     const projectModal = projectModals[index];
+const projectModals = [
+  projectP1,
+  projectP2,
+  projectP3,
+  projectP4,
+  projectModalTeamP1,
+  projectModalTeamP2,
+];
+const projectBtns = [
+  projectOpenBtnP1,
+  projectOpenBtnP2,
+  projectOpenBtnP3,
+  projectOpenBtnP4,
+  projectOpenBtnTeamP1,
+  projectOpenBtnTeamP2,
+];
 
-//     if (btn) {
-//         btn.addEventListener('click', (event) => {
-//             event.preventDefault();
-//             projectModal.classList.add(MODAL_ACTIVE_CLASS);
+projectBtns.forEach((btn, index) => {
+  const projectModal = projectModals[index];
 
-//             document.body.classList.add(BODY_SCROLL_DISABLE_CLASS);
-//         })
-//     }
-// });
+  if (btn) {
+    btn.addEventListener('click', (event) => {
+      event.preventDefault();
+      projectModal.classList.add(MODAL_ACTIVE_CLASS);
+
+      document.body.classList.add(BODY_SCROLL_DISABLE_CLASS);
+    })
+  }
+});
+
+// MODALS.JS
 
 
 const burger = document.querySelector('#burger');
