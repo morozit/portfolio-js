@@ -386,13 +386,29 @@
             <p class="cb-form__descr">Leave a request to discuss the task and technical requirements</p>
 
             <label for="" class="cb-form__label">
-              <input type="text" class="cb-form__input" placeholder="Name">
+              <input 
+                type="text"
+                name="name" 
+                class="cb-form__input" 
+                placeholder="Name" 
+                id="callback-form-input-name">
             </label>
             <label for="" class="cb-form__label">
-              <input type="email" class="cb-form__input" placeholder="Email">
+              <input 
+                type="email"
+                name="mail" 
+                class="cb-form__input" 
+                placeholder="Email"
+                id="callback-form-input-email">
             </label>
             <label for="" class="cb-form__label">
-              <input type="tel" class="cb-form__input" placeholder="Phone" pattern="">
+              <input 
+                type="tel"
+                name="tel" 
+                class="cb-form__input" 
+                placeholder="Phone" 
+                pattern="" 
+                id="callback-form-input-phone">
             </label>
             
             <button class="cb-form__btn">Discuss the project —</button>
@@ -456,7 +472,7 @@
                   type="radio"
                   class="calculator-form__input-field"
                   id="calculator-form__input-yes"
-                  name="cart"
+                  name="neme"
                   value="yes"
                 />
                 <label for="calculator-form__input-yes" class="calculator-form__label">Yes</label>
@@ -934,6 +950,7 @@
     <!-- <script src="./js/project-modals.js"  type="module"></script> -->
     <!-- <script src="./js/project-modals.js"  ></script> -->
     <script src="./js/modals.js"  type="module"></script>
+    <script src="./js/callback-form.js" type="module"></script>
     
   </body>
 </html>
