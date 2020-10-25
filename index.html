@@ -60,7 +60,7 @@
           </div>
 
           <div class="header__button-wrap">
-            <a href="#" class="header__btn">— HIRE ME</a>
+            <a href="#cb-form-section" class="header__btn">— HIRE ME</a>
             <a href="" class="burger" id="burger">
               <i class="fas fa-bars"></i>
             </a>
@@ -379,9 +379,9 @@
           </ul>
         </div>
       </section>
-      <section class="cb-form">
+      <section class="cb-form" id="cb-form-section">
         <div class="cb-form__container">
-          <form action="" class="cb-form__container--background">
+          <form action="" class="cb-form__container--background" id="cb-form">
             <h2 class="cb-form__title">/Are you minding [a project?]</h2>
             <p class="cb-form__descr">Leave a request to discuss the task and technical requirements</p>
 
@@ -407,7 +407,7 @@
                 name="tel" 
                 class="cb-form__input" 
                 placeholder="Phone" 
-                pattern="" 
+                pattern="[^0-9]{1}[0-9]{12}" 
                 id="callback-form-input-phone">
             </label>
             
@@ -943,14 +943,14 @@
       </div>
     </div>
 
-
+<script src="./js/callback-form.js" type="module"></script>
     <!-- <script src="./js/main.js" type="module"></script> -->
     <script src="./js/choices.min.js" type="module"></script>
     <script src="./js/calculator.js" type="module"></script>
     <!-- <script src="./js/project-modals.js"  type="module"></script> -->
     <!-- <script src="./js/project-modals.js"  ></script> -->
     <script src="./js/modals.js"  type="module"></script>
-    <script src="./js/callback-form.js" type="module"></script>
+    
     
   </body>
 </html>
