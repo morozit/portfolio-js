@@ -1,69 +1,107 @@
-const callbackForm = document.querySelector('.cb-form__container--background');
-const requestReceivedModal = document.querySelector('#request-received');
+const nameInput = document.querySelector('#callback-form-input-name');
+const emailInput = document.querySelector('#callback-form-input-email');
+const phoneInput = document.querySelector('#callback-form-input-phone');
 
-const userName = document.querySelector('#callback-form-input-name');
-const userEmail = document.querySelector('#callback-form-input-email');
-const userPhone = document.querySelector('#callback-form-input-phone');
+const callBackForm = document.querySelector('#cb-form');
+const requestRecievedModal = document.querySelector('#request-received');
 
-userPhone.addEventListener('click', function () {
-  if (!userPhone.value.trim()) {
-    userPhone.value = '+380';
-  }
+
+const DEFAULT_PHONE = '+380';
+
+callBackForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    let oneFieldNotValid = false;
+
+    if (!isPhoneValid(phoneInput.value.trim())) {
+        phoneInput.classList.add('input-error-border');
+        oneFieldNotValid = true;
+    }
+
+    if (!isEmailValid(emailInput.value.trim())) {
+        emailInput.classList.add('input-error-border');
+        oneFieldNotValid = true;
+    }
+
+    if (!nameInput.value.trim()) {
+        nameInput.classList.add('input-error-border');
+        oneFieldNotValid = true;
+    }
+
+    if (oneFieldNotValid) {
+        return;
+    }
+
+    requestRecievedModal.classList.add('modal-active');
+    phoneInput.value = '';
+    emailInput.value = '';
+    nameInput.value = '';
+})
+
+nameInput.addEventListener('change', function(event){
+    const element = event.target; 
+
+    if (!element.value.trim()) {
+        element.classList.add('input-error-border');
+        return;
+    }
+
+    element.classList.remove('input-error-border');
+})
+
+emailInput.addEventListener('change', function(event){
+    const element = event.target; 
+
+    if (!isEmailValid(element.value.trim())) {
+        element.classList.add('input-error-border');
+        return;
+    }
+
+    element.classList.remove('input-error-border');
+
+})
+
+
+phoneInput.addEventListener('click', function(event){
+    const element = event.target; 
+
+    if (!element.value || !element.value.trim()) {
+        element.value = DEFAULT_PHONE;
+    }
 });
 
-userPhone.addEventListener('blur', function () {
-  if (userPhone.value === '+380') {
-    userPhone.value = '';
-  }
+phoneInput.addEventListener('blur', function(event){
+    const element = event.target; 
+
+    if (element.value.trim() === DEFAULT_PHONE) {
+        element.classList.add('input-error-border');
+        return;
+    }
+
+    element.classList.remove('input-error-border');
 });
 
-callbackForm.addEventListener('submit', function (event) {
-  event.preventDefault();
-  let hasError = false;
+phoneInput.addEventListener('change', function(event){
+    const element = event.target; 
 
-  if (!userName.value.trim()) {
-    userName.classList.add('callback-form-input-error');
-    hasError = true;
-  } else {
-    userName.classList.remove('callback-form-input-error');
-  }
+    if (!isPhoneValid(element.value.trim())) {
+        element.classList.add('input-error-border');
+        return;
+    }
 
-  if (!userEmail.value.trim() || !isEmailValid(userEmail.value)) {
-    userEmail.classList.add('callback-form-input-error');
-    hasError = true;
-  } else {
-    userEmail.classList.remove('callback-form-input-error');
-  }
+    element.classList.remove('input-error-border');
 
-  if (!userPhone.value.trim() || !isPhoneValid(userPhone.value)) {
-    userPhone.classList.add('callback-form-input-error');
-    hasError = true;
-  } else {
-    userPhone.classList.remove('callback-form-input-error');
-  }
+})
 
-  if (hasError) {
-    return;
-  }
 
-  userName.value = '';
-  userEmail.value = '';
-  userPhone.value = '';
 
-  requestReceivedModal.classList.add('modal-active');
-
-  setTimeout(function () {
-    requestReceivedModal.classList.remove('modal-active');
-  }, 2000);
-});
 
 function isPhoneValid(phone = '') {
-  const regexp = /(\+38)?\(?\d{3}\)?[\s\.-]?(\d{7}|\d{3}[\s\.-]\d{2}[\s\.-]\d{2}|\d{3}-\d{4})/;
+    const regexp = /(\+38)?\(?\d{3}\)?[\s\.-]?(\d{7}|\d{3}[\s\.-]\d{2}[\s\.-]\d{2}|\d{3}-\d{4})/;
 
-  return phone.match(regexp);
+    return phone.match(regexp);
 }
 
 function isEmailValid(email) {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email.toLowerCase());
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email.toLowerCase());
 }
