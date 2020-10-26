@@ -59,6 +59,9 @@
   &__item {
     border-bottom: 1px solid $c-grey-blue;
     margin-bottom: 30px;
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 35px) / 2);
+    }
   }
 
   &__item:not(:nth-child(2n)) {
@@ -68,12 +71,14 @@
   }
 }
 
-.personal-project-item-container {
-  padding-top: 40px;
-  background: $c-dark-blue;
-  border-radius: 8px 8px 0 0;
-  position: relative;
-}
+// .personal-project-item-container {
+//   padding-top: 30px;
+//   // padding-bottom: 30px;
+//   background: $c-dark-blue;
+//   border-radius: 8px 8px 0 0;
+//   position: relative;
+//   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+// }
 
 .projet-item-dot-container {
   display: flex;
