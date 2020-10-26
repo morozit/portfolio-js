@@ -13,9 +13,12 @@
     <meta property="og:image" content="img/img/my-photo.png" />
     <meta property="og:site_name" content="mini Project" /> -->
 
+
+    <link rel="stylesheet" href="./swiper.min.css" />
     <link rel="stylesheet" href="./choices.min.css" />
     <link rel="stylesheet" href="/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    
   </head>
   <body>
     <header class="header" id="header">
@@ -243,23 +246,47 @@
       <!-- personal projects -->
       <section class="personal-projects" id="projects">
         <div class="personal-projects__container">
+
           <h3 class="personal-projects__title">
             My personal _projects
           </h3>
+
           <ul class="personal-project__wrap">
-              <!-- карточка -->
+            <!-- карточка-1 -->
             <li class="personal-project__item">
               <div class="personal-project-item-container">
+                <!-- Пагінація -->
                 <div class="projet-item-dot-container">
                   <div class="projet-item-dot"></div>
                   <div class="projet-item-dot"></div>
                   <div class="projet-item-dot"></div>
                 </div>
-                <img
-                  src="img/img/projects/personal/full-stack.jpg"
-                  alt="full stack website"
-                  class="personal-project-img"
-                />
+
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <img
+                      class="personal-project-img swiper-slide"
+                      src="img/img/projects/personal/full-stack/full-stack-1.png"
+                      alt="full-stack-project-1"
+                    />
+                    <img
+                      class="personal-project-img swiper-slide"
+                      src="img/img/projects/personal/full-stack/full-stack-2.png"
+                      alt="full-stack-project-2"
+                    />
+                    <img
+                      class="personal-project-img swiper-slide"
+                      src="img/img/projects/personal/full-stack/full-stack-3.png"
+                      alt="full-stack-project-3"
+                    />
+                    <img
+                      class="personal-project-img swiper-slide"
+                      src="img/img/projects/personal/full-stack/full-stack-4.png"
+                      alt="full-stack-project-4"
+                    />
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
               </div>
               <p class="personal-project-name">
                 <i class="fas fa-laptop-code personal-project-icon"></i>
@@ -267,7 +294,7 @@
               </p>
               <button class="btn__more-details" id="personal-p1-btn">More details —</button>
             </li>
-            <!-- карточка -->
+            <!-- карточка-2 -->
             <li class="personal-project__item">
               <div class="personal-project-item-container">
                 <div class="projet-item-dot-container">
@@ -287,7 +314,7 @@
               </p>
               <button class="btn__more-details" id="personal-p2-btn">More details —</button>
             </li>
-            <!-- карточка -->
+            <!-- карточка-3 -->
             <li class="personal-project__item">
               <div class="personal-project-item-container">
                 <div class="projet-item-dot-container">
@@ -307,7 +334,7 @@
               </p>
               <button class="btn__more-details" id="personal-p3-btn">More details —</button>
             </li>
-            <!-- карточка -->
+            <!-- карточка-4 -->
             <li class="personal-project__item">
               <div class="personal-project-item-container">
                 <div class="projet-item-dot-container">
@@ -327,7 +354,10 @@
               </p>
               <button class="btn__more-details" id="personal-p4-btn">More details —</button>
             </li>
+
+            
           </ul>
+          
         </div>
       </section>
       <!-- team-projects -->
@@ -336,6 +366,7 @@
           <span class="team-projects__title--bgd">TEAM</span>
           <h3 class="team-projects__title">Teamwork _projects</h3>
           <ul class="team-project__wrap">
+
             <!-- карточка -->
             <li class="team-project__item">
               <div class="personal-project-item-container">
@@ -356,6 +387,7 @@
               </p>
               <button class="btn__more-details" id="team-p1-btn">More details —</button>
             </li>
+
             <!-- карточка -->
             <li class="team-project__item">
               <div class="personal-project-item-container">
@@ -376,9 +408,33 @@
               </p>
               <button class="btn__more-details" id="team-p2-btn">More details —</button>
             </li>
+
+            <!-- карточка -->
+            <li class="team-project__item">
+              <div class="personal-project-item-container">
+                <div class="projet-item-dot-container">
+                  <div class="projet-item-dot"></div>
+                  <div class="projet-item-dot"></div>
+                  <div class="projet-item-dot"></div>
+                </div>
+                <img
+                  src="img/img/projects/team/it-test.jpg"
+                  alt="it test app"
+                  class="personal-project-img"
+                />
+              </div>
+              <p class="team-projects__name">
+                <i class="fas fa-laptop-code team-projects__icon"></i>
+                Technology: React.js, Node.js
+              </p>
+              <button class="btn__more-details" id="team-p2-btn">More details —</button>
+            </li>
+
           </ul>
         </div>
       </section>
+
+      <!-- cb-form  Форма Зворотнього ЗВЯЗКУ -->
       <section class="cb-form">
         <div class="cb-form__container">
           <form action="" class="cb-form__container--background">
@@ -399,6 +455,8 @@
           </form>
         </div>
       </section>
+
+      <!-- calculator -->
       <section class="calculator" id="cost-calculator">
         <div class="calculator__container">
           <div class="calculator__deasctop-wrap">
@@ -614,7 +672,8 @@
         </p>
       </div>
     </div>
-      
+    
+    
     <!-- TODO: модалка PERSONAL PROJECTS P1 -->
 
     <div class="modal project-modal modal-area-bgd" id="personal-p1">
@@ -928,12 +987,18 @@
     </div>
 
 
-    <!-- <script src="./js/main.js" type="module"></script> -->
+    <script src="./js/modals.js"  type="module"></script>
+    
     <script src="./js/choices.min.js" type="module"></script>
     <script src="./js/calculator.js" type="module"></script>
+    <script src="./js/swiper.min.js" type="module"></script>
+
+
+
+    <!-- <script src="./js/main.js" type="module"></script> -->
     <!-- <script src="./js/project-modals.js"  type="module"></script> -->
     <!-- <script src="./js/project-modals.js"  ></script> -->
-    <script src="./js/modals.js"  type="module"></script>
+    
     
   </body>
 </html>
