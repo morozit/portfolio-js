@@ -34,7 +34,6 @@
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
-  outline: 1px solid #ff6b08;
 }
 
 @media screen and (min-width: 320px) {
