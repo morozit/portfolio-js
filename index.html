@@ -63,7 +63,7 @@
           </div>
 
           <div class="header__button-wrap">
-            <a href="#" class="header__btn">— HIRE ME</a>
+            <a href="#cb-form-section" class="header__btn">— HIRE ME</a>
             <a href="" class="burger" id="burger">
               <i class="fas fa-bars"></i>
             </a>
@@ -85,9 +85,9 @@
                 / Using HTML, CSS, JavaScript, React Native and Node.js I help to
                 build websites, small and medium web apps for business
               </p>
-              <button type="button" class="developer__btn btn">
+              <a href="#projects" type="button" class="developer__btn btn" >
                 See my recent works —
-              </button>
+              </a>
             </div>
 
             <!--  TODO: міні блок (фото з кнопкою відео), медіа від планшета -->
@@ -433,22 +433,36 @@
           </ul>
         </div>
       </section>
-
-      <!-- cb-form  Форма Зворотнього ЗВЯЗКУ -->
-      <section class="cb-form">
+      <section class="cb-form" id="cb-form-section">
         <div class="cb-form__container">
-          <form action="" class="cb-form__container--background">
+          <form action="" class="cb-form__container--background" id="cb-form">
             <h2 class="cb-form__title">/Are you minding [a project?]</h2>
             <p class="cb-form__descr">Leave a request to discuss the task and technical requirements</p>
 
             <label for="" class="cb-form__label">
-              <input type="text" class="cb-form__input" placeholder="Name">
+              <input 
+                type="text"
+                name="name" 
+                class="cb-form__input" 
+                placeholder="Name" 
+                id="callback-form-input-name">
             </label>
             <label for="" class="cb-form__label">
-              <input type="email" class="cb-form__input" placeholder="Email">
+              <input 
+                type="email"
+                name="mail" 
+                class="cb-form__input" 
+                placeholder="Email"
+                id="callback-form-input-email">
             </label>
             <label for="" class="cb-form__label">
-              <input type="tel" class="cb-form__input" placeholder="Phone" pattern="">
+              <input 
+                type="tel"
+                name="tel" 
+                class="cb-form__input" 
+                placeholder="Phone" 
+                pattern="[^0-9]{1}[0-9]{12}" 
+                id="callback-form-input-phone">
             </label>
             
             <button class="cb-form__btn">Discuss the project —</button>
@@ -514,7 +528,7 @@
                   type="radio"
                   class="calculator-form__input-field"
                   id="calculator-form__input-yes"
-                  name="cart"
+                  name="neme"
                   value="yes"
                 />
                 <label for="calculator-form__input-yes" class="calculator-form__label">Yes</label>
@@ -988,6 +1002,7 @@
 
 
     <script src="./js/modals.js"  type="module"></script>
+    <script src="./js/callback-form.js" type="module"></script>
     
     <script src="./js/choices.min.js" type="module"></script>
     <script src="./js/calculator.js" type="module"></script>
@@ -998,6 +1013,7 @@
     <!-- <script src="./js/main.js" type="module"></script> -->
     <!-- <script src="./js/project-modals.js"  type="module"></script> -->
     <!-- <script src="./js/project-modals.js"  ></script> -->
+    
     
     
   </body>

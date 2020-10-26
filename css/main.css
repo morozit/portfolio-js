@@ -1817,12 +1817,15 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  font-size: 17px;
+  line-height: 150%;
   background: transparent;
   outline: none;
   border: none;
+  color: #4a5771;
   border-bottom: 1px solid #4a5771;
-  text-align: center;
-  padding: 0px 30px 15px 30px;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 320px) {
@@ -1839,6 +1842,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .cb-form__input {
+    text-align: left;
     width: 260px;
   }
 }
@@ -1865,6 +1869,26 @@ a {
   font-size: 17px;
   line-height: 150%;
   color: #4f5b70;
+}
+
+.cb-form__input-error {
+  border-bottom: 1px solid #ff0000;
+}
+
+.cb-form__input-error::-webkit-input-placeholder {
+  color: #ff0000;
+}
+
+.cb-form__input-error:-ms-input-placeholder {
+  color: #ff0000;
+}
+
+.cb-form__input-error::-ms-input-placeholder {
+  color: #ff0000;
+}
+
+.cb-form__input-error::placeholder {
+  color: #ff0000;
 }
 
 @media screen and (min-width: 320px) {
