@@ -154,3 +154,11 @@
     color: $txt-c-grey;
   }
 }
+
+.cb-form__input-error {
+  border-bottom: 1px solid #ff0000;
+}
+
+.cb-form__input-error::placeholder {
+  color: #ff0000;
+}
