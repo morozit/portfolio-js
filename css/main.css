@@ -1871,6 +1871,26 @@ a {
   color: #4f5b70;
 }
 
+.cb-form__input-error {
+  border-bottom: 1px solid #ff0000;
+}
+
+.cb-form__input-error::-webkit-input-placeholder {
+  color: #ff0000;
+}
+
+.cb-form__input-error:-ms-input-placeholder {
+  color: #ff0000;
+}
+
+.cb-form__input-error::-ms-input-placeholder {
+  color: #ff0000;
+}
+
+.cb-form__input-error::placeholder {
+  color: #ff0000;
+}
+
 @media screen and (min-width: 320px) {
   .calculator {
     padding-top: 30px;
