@@ -13,17 +13,17 @@ callBackForm.addEventListener('submit', function(event) {
     let oneFieldNotValid = false;
 
     if (!isPhoneValid(phoneInput.value.trim())) {
-        phoneInput.classList.add('input-error-border');
+        phoneInput.classList.add('cb-form__input-error');
         oneFieldNotValid = true;
     }
 
     if (!isEmailValid(emailInput.value.trim())) {
-        emailInput.classList.add('input-error-border');
+        emailInput.classList.add('cb-form__input-error');
         oneFieldNotValid = true;
     }
 
     if (!nameInput.value.trim()) {
-        nameInput.classList.add('input-error-border');
+        nameInput.classList.add('cb-form__input-error');
         oneFieldNotValid = true;
     }
 
@@ -41,22 +41,22 @@ nameInput.addEventListener('change', function(event){
     const element = event.target; 
 
     if (!element.value.trim()) {
-        element.classList.add('input-error-border');
+        element.classList.add('cb-form__input-error');
         return;
     }
 
-    element.classList.remove('input-error-border');
+    element.classList.remove('cb-form__input-error');
 })
 
 emailInput.addEventListener('change', function(event){
     const element = event.target; 
 
     if (!isEmailValid(element.value.trim())) {
-        element.classList.add('input-error-border');
+        element.classList.add('cb-form__input-error');
         return;
     }
 
-    element.classList.remove('input-error-border');
+    element.classList.remove('cb-form__input-error');
 
 })
 
@@ -73,22 +73,22 @@ phoneInput.addEventListener('blur', function(event){
     const element = event.target; 
 
     if (element.value.trim() === DEFAULT_PHONE) {
-        element.classList.add('input-error-border');
+        element.classList.add('cb-form__input-error');
         return;
     }
 
-    element.classList.remove('input-error-border');
+    element.classList.remove('cb-form__input-error');
 });
 
 phoneInput.addEventListener('change', function(event){
     const element = event.target; 
 
     if (!isPhoneValid(element.value.trim())) {
-        element.classList.add('input-error-border');
+        element.classList.add('cb-form__input-error');
         return;
     }
 
-    element.classList.remove('input-error-border');
+    element.classList.remove('cb-form__input-error');
 
 })
 
