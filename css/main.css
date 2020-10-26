@@ -246,20 +246,22 @@ template {
   pointer-events: none;
 }
 
-.invisible {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  pointer-events: none;
+@media screen and (max-width: 639px) {
+  .invisible {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    pointer-events: none;
+  }
 }
 
 html {
@@ -795,7 +797,7 @@ a {
     position: absolute;
     right: -27px;
     top: -71px;
-    z-index: 25;
+    z-index: 10;
     width: 361px;
     height: 390px;
   }
@@ -1445,16 +1447,15 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .personal-project__item:not(:nth-child(2n)) {
-    margin-right: 35px;
+  .personal-project__item {
+    width: calc((100% - 35px) / 2);
   }
 }
 
-.personal-project-item-container {
-  padding-top: 40px;
-  background: #253045;
-  border-radius: 8px 8px 0 0;
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .personal-project__item:not(:nth-child(2n)) {
+    margin-right: 35px;
+  }
 }
 
 .projet-item-dot-container {
@@ -2739,5 +2740,83 @@ input[type="radio"].visually-hidden {
   text-align: center;
   width: 185px;
   margin: 0;
+}
+
+.project-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.project-modal-container {
+  background: #ffffff;
+  padding: 45px 0;
+  text-align: left;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 85%;
+}
+
+.project-modal-scrollable {
+  overflow-y: auto;
+  height: 100%;
+  padding: 0 25px;
+}
+
+.project-modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #141d2d;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0 25px 0;
+  display: block;
+}
+
+.project-modal-text {
+  font-size: 16px;
+  line-height: 145%;
+  color: #141d2d;
+  margin: 0 0 30px 0;
+}
+
+.project-modal-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer__contack-wrap-tab {
+  display: none;
+}
+
+.project-modal-scrollable .personal-project-btn {
+  width: 240px;
+}
+
+.project-modal-img {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  background: #253045;
+  border-radius: 8px 8px 0 0;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 /*# sourceMappingURL=main.css.map */
