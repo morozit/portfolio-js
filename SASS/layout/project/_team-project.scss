@@ -104,6 +104,9 @@
   &__item {
     border-bottom: 1px solid $c-grey-light;
     margin-bottom: 30px;
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 35px) / 2);
+    }
   }
 
   &__item:not(:nth-child(2n)) {
@@ -111,13 +114,4 @@
       margin-right: 35px;
     }
   }
-}
-
-.team-project-item {
-  border-bottom: 1px solid $c-grey-light;
-  margin-bottom: 30px;
-}
-
-.team-project-item:last-child {
-  margin-bottom: 0;
 }
