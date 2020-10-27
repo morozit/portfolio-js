@@ -7,17 +7,18 @@
     <link rel="icon" href="./img/img/laptop-icon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="./img/img/laptop-icon.png" type="image/x-icon" />
     
-    <!-- <meta property="og:title" content="mini Project" />
+    <meta property="og:title" content="mini Project" />
+    <meta name="Description" content="Резюме на соискание должности Junior Front-end Developer">
     <meta property="og:description" content="Резюме на соискание должности Junior Front-end Developer" />
-    <meta property="og:type" content="Резюме на соискание должности Junior Front-end Developer" />
-    <meta property="og:image" content="img/img/my-photo.png" />
-    <meta property="og:site_name" content="mini Project" /> -->
+    <!-- <meta property="og:type" content="Резюме на соискание должности Junior Front-end Developer" /> -->
+    <!-- <meta property="og:image" content="img/img/my-photo.png" /> -->
+    <!-- <meta property="og:site_name" content="mini Project" /> -->
 
 
     <link rel="stylesheet" href="./swiper.min.css" />
     <link rel="stylesheet" href="./choices.min.css" />
     <link rel="stylesheet" href="/font-awesome.min.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     
   </head>
   <body>
@@ -92,11 +93,19 @@
 
             <!--  TODO: міні блок (фото з кнопкою відео), медіа від планшета -->
             <div class="developer__about--wrap">
-              <img
-                src="./img/img/my-photo.png"
-                alt="Moroz Roman"
-                class="developer__about-img"
-              />
+              <picture>
+                <source
+                  srcset="img/img/my-photo.webp   182w"
+                  media="(min-width: 300px)" />
+                <source
+                  srcset="img/img/my-photo.png    182w"
+                  media="(min-width: 300px)" />
+                <img
+                  src="./img/img/my-photo.png"
+                  alt="Moroz Roman"
+                  class="developer__about-img"
+                  loading="lazy"
+                /></picture>
 
               <div class="developer__about-me--wrap">
                 <p class="developer__about-me">About me in 2 minutes</p>
@@ -112,6 +121,7 @@
               src="./img/img/laptop.svg"
               class="developer__laptop-img"
               alt="laptop"
+              loading="lazy"
             />
             
           <!-- </div> -->
@@ -212,11 +222,34 @@
               <div class="about__img--container">
                 <p class="about__img--text">
                   WEB
-                  <img
-                    src="img/img/web-apps-laptop.png"
-                    alt="web apps laptop"
-                    class="about__img"
-                  />
+                  <!--  -->
+                  <picture>
+                    <source
+                      srcset="img/img/about/mob-laptop.webp    235w"
+                      media="(max-width: 639px)" />
+                    <source
+                      srcset="img/img/about/tab-laptop.webp    361w"
+                      media="(max-width: 1199px)" />
+                    <source
+                      srcset="img/img/about/desk-laptop.webp    421w"
+                      media="(min-width: 1200px)" />
+
+                    <source
+                      srcset="img/img/about/mob-laptop.png    235w"
+                      media="(max-width: 639px)" />
+                    <source
+                      srcset="img/img/about/tab-laptop.png    361w"
+                      media="(max-width: 1199px)" />
+                    <source
+                      srcset="img/img/about/desk-laptop.png    421w"
+                      media="(min-width: 1200px)" />
+
+                    <img
+                      class="project__card-img"
+                      src="img/img/about/desk-laptop.png"
+                      alt="web-apps-laptop"
+                      loading="lazy"
+                  /></picture>
                 </p>
               </div>
               <p class="about__text">
@@ -259,26 +292,64 @@
                 <div class="swiper-container">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
-                    <img
-                      class="swiper-slide personal-project-img "
-                      src="img/img/projects/personal/full-stack/full-stack-1.png"
-                      alt="full-stack-project-1"
-                    />
-                    <img
-                      class="swiper-slide personal-project-img "
-                      src="img/img/projects/personal/full-stack/full-stack-2.png"
-                      alt="full-stack-project-2"
-                    />
-                    <img
-                      class="swiper-slide personal-project-img "
-                      src="img/img/projects/personal/full-stack/full-stack-3.png"
-                      alt="full-stack-project-3"
-                    />
-                    <img
-                      class="swiper-slide personal-project-img "
-                      src="img/img/projects/personal/full-stack/full-stack-4.png"
-                      alt="full-stack-project-4"
-                    />
+
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/full-stack/full-stack-1.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/full-stack/full-stack-1.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/full-stack/full-stack-1.jpg"
+                        alt="full-stack-project-1"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/full-stack/full-stack-2.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/full-stack/full-stack-2.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/full-stack/full-stack-2.jpg"
+                        alt="full-stack-project-2"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/full-stack/full-stack-3.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/full-stack/full-stack-3.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/full-stack/full-stack-3.jpg"
+                        alt="full-stack-project-3"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/full-stack/full-stack-4.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/full-stack/full-stack-4.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/full-stack/full-stack-4.jpg"
+                        alt="full-stack-project-4"
+                        loading="lazy"
+                      />
+                    </picture>
+
                   </div>
                   <!-- If we need pagination -->
                   <div class="swiper-pagination"></div>
@@ -300,21 +371,50 @@
                 <div class="swiper-container">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
-                    <img 
-                      class="swiper-slide personal-project-img " 
-                      src="img/img/projects/personal/wedding/wedding-1.jpg"
-                      alt="wedding-project-1"
-                    />
-                    <img 
-                      class="swiper-slide personal-project-img " 
-                      src="img/img/projects/personal/wedding/wedding-2.jpg"
-                      alt="wedding-project-2"
-                    />
-                    <img 
-                      class="swiper-slide personal-project-img " 
-                      src="img/img/projects/personal/wedding/wedding-3.jpg"
-                      alt="wedding-project-3"
-                    />
+
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/wedding/wedding-1.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/wedding/wedding-1.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/wedding/wedding-1.jpg"
+                        alt="wedding-project-1"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/wedding/wedding-2.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/wedding/wedding-2.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/wedding/wedding-2.jpg"
+                        alt="wedding-project-2"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/wedding/wedding-3.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/wedding/wedding-3.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/wedding/wedding-3.jpg"
+                        alt="wedding-project-3"
+                        loading="lazy"
+                      />
+                    </picture>
+
                   </div>
                   <!-- If we need pagination -->
                   <div class="swiper-pagination"></div>
@@ -336,21 +436,50 @@
                 <div class="swiper-container">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
-                    <img 
-                      class="swiper-slide personal-project-img"
-                      src="img/img/projects/personal/pro-test/pro-test-1.jpg"
-                      alt="pro-test-image-1"
-                    />
-                    <img 
-                      class="swiper-slide personal-project-img"
-                      src="img/img/projects/personal/pro-test/pro-test-2.jpg"
-                      alt="pro-test-image-2"
-                    />
-                    <img 
-                      class="swiper-slide personal-project-img"
-                      src="img/img/projects/personal/pro-test/pro-test-3.jpg"
-                      alt="pro-test-image-3"
-                    />
+
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/pro-test/pro-test-1.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/pro-test/pro-test-1.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/pro-test/pro-test-1.jpg"
+                        alt="pro-test-image-1"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/pro-test/pro-test-2.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/pro-test/pro-test-2.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/pro-test/pro-test-2.jpg"
+                        alt="pro-test-image-2"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/pro-test/pro-test-3.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/pro-test/pro-test-3.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/pro-test/pro-test-3.jpg"
+                        alt="pro-test-image-3"
+                        loading="lazy"
+                      />
+                    </picture>
+
                   </div>
                   <!-- If we need pagination -->
                   <div class="swiper-pagination"></div>
@@ -372,18 +501,50 @@
                 <div class="swiper-container">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
-                    <img 
-                      class="swiper-slide personal-project-img " 
-                      src="img/img/projects/personal/goit/goit-1.jpg"
-                      alt="goit-project-image-1">
-                    <img 
-                      class="swiper-slide personal-project-img " 
-                      src="img/img/projects/personal/goit/goit-2.jpg"
-                      alt="goit-project-image-2">
-                    <img 
-                      class="swiper-slide personal-project-img " 
-                      src="img/img/projects/personal/goit/goit-3.jpg"
-                      alt="goit-project-image-3">
+
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/goit/goit-1.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/goit/goit-1.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/goit/goit-1.jpg"
+                        alt="goit-project-image-1"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/goit/goit-2.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/goit/goit-2.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/goit/goit-2.jpg"
+                        alt="goit-project-image-2"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/personal/goit/goit-3.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/personal/goit/goit-3.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/personal/goit/goit-3.jpg"
+                        alt="goit-project-image-3"
+                        loading="lazy"
+                      />
+                    </picture>
+
                   </div>
                   <!-- If we need pagination -->
                   <div class="swiper-pagination"></div>
@@ -418,27 +579,50 @@
                 <div class="swiper-container">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
-                    <img 
-                      class="swiper-slide personal-project-img " 
-                      src="img/img/projects/team/questify/questify-1.jpg" 
-                      alt="Questify-project-image-1" 
-                    />
-                    <img 
-                      class="swiper-slide personal-project-img " 
-                      src="img/img/projects/team/questify/questify-2.jpg" 
-                      alt="Questify-project-image-2" 
-                    />
-                    
-                    <img 
-                      class="swiper-slide personal-project-img " 
-                      src="img/img/projects/team/questify/questify-3.jpg" 
-                      alt="Questify-project-image-3" 
-                    />
-                    <img 
-                      class="swiper-slide personal-project-img " 
-                      src="img/img/projects/team/questify/questify-4.jpg" 
-                      alt="Questify-project-image-4" 
-                    />
+
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/team/questify/questify-1.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/team/questify/questify-1.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/team/questify/questify-1.jpg"
+                        alt="Questify-project-image-1"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/team/questify/questify-2.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/team/questify/questify-2.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/team/questify/questify-2.jpg"
+                        alt="Questify-project-image-2"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img/img/projects/team/questify/questify-3.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img/img/projects/team/questify/questify-3.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img/img/projects/team/questify/questify-3.jpg"
+                        alt="Questify-project-image-3"
+                        loading="lazy"
+                      />
+                    </picture>
+
                   </div>
                   <!-- If we need pagination -->
                   <div class="swiper-pagination"></div>
@@ -461,21 +645,50 @@
                 <div class="swiper-container">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
-                    <img 
-                      class="swiper-slide personal-project-img" 
-                      src="img\img\projects\team\it-test\it-test-1.jpg" 
-                      alt="it-test-project-image-1" 
-                    />
-                    <img 
-                      class="swiper-slide personal-project-img" 
-                      src="img\img\projects\team\it-test\it-test-2.jpg" 
-                      alt="it-test-project-image-2" 
-                    />
-                    <img 
-                      class="swiper-slide personal-project-img" 
-                      src="img\img\projects\team\it-test\it-test-3.jpg" 
-                      alt="it-test-project-image-3" 
-                    />
+
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img\img\projects\team\it-test\it-test-1.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img\img\projects\team\it-test\it-test-1.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img\img\projects\team\it-test\it-test-1.jpg"
+                        alt="it-test-project-image-1"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img\img\projects\team\it-test\it-test-2.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img\img\projects\team\it-test\it-test-2.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img\img\projects\team\it-test\it-test-2.jpg"
+                        alt="it-test-project-image-2"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture class="swiper-slide personal-project-img ">
+                      <source
+                        srcset="img\img\projects\team\it-test\it-test-3.webp   560w"
+                        media="(min-width: 300px)" />
+                      <source
+                        srcset="img\img\projects\team\it-test\it-test-3.jpg    560w"
+                        media="(min-width: 300px)" />
+                      <img
+                        class="swiper-slide personal-project-img "
+                        src="img\img\projects\team\it-test\it-test-3.jpg"
+                        alt="it-test-project-image-3"
+                        loading="lazy"
+                      />
+                    </picture>
+
                   </div>
                   <!-- If we need pagination -->
                   <div class="swiper-pagination"></div>
@@ -549,7 +762,12 @@
             </p>
 
             <div class="calculator__img--wrap">
-              <img src="./img/img/calculator.svg" class="calculator__img" alt="calculator" />
+              <img 
+                src="./img/img/calculator.svg" 
+                class="calculator__img" 
+                alt="calculator" 
+                loading="lazy"
+              />
               <p class="calculator__description">/ The final cost depends on the technical requirements, terms, specifics of your
                 project.</p>
             </div>
@@ -657,28 +875,48 @@
         
         <ul class="footer__social-icon">
           <li class="footer__social-icon--item">
-            <a href="" class="footer__social-icon--link">
+            <a 
+              href="https://github.com/morozit" 
+              class="footer__social-icon--link"
+              rel="noreferrer"
+              rel="nofollow"
+              rel="noopener">
               <svg class="footer__social-icon--icon">
                 <use href="./img/img/icon.svg#github"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-icon--item">
-            <a href="" class="footer__social-icon--link">
+            <a 
+              href="https://www.linkedin.com/" 
+              class="footer__social-icon--link"
+              rel="noreferrer"
+              rel="nofollow"
+              rel="noopener">
               <svg class="footer__social-icon--icon">
                 <use href="./img/img/icon.svg#linkedin"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-icon--item">
-            <a href="" class="footer__social-icon--link">
+            <a 
+              href="https://www.facebook.com/moroz.roma" 
+              class="footer__social-icon--link"
+              rel="noreferrer"
+              rel="nofollow"
+              rel="noopener">
               <svg class="footer__social-icon--icon">
                 <use href="./img/img/icon.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-icon--item">
-            <a href="" class="footer__social-icon--link">
+            <a 
+              href="https://www.instagram.com/moroz29r/"
+              class="footer__social-icon--link"
+              rel="noreferrer"
+              rel="nofollow"
+              rel="noopener">
               <svg class="footer__social-icon--icon">
                 <use href="./img/img/icon.svg#instagram"></use>
               </svg>
@@ -762,22 +1000,66 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-              <img 
-                src="img/img/projects/personal/full-stack/full-stack-1.png" 
-                class="swiper-slide project-modal-img" 
-                alt="full-stack-project-1">
-              <img 
-                src="img/img/projects/personal/full-stack/full-stack-2.png" 
-                class="swiper-slide project-modal-img" 
-                alt="full-stack-project-2">
-              <img 
-                src="img/img/projects/personal/full-stack/full-stack-3.png" 
-                class="swiper-slide project-modal-img" 
-                alt="full-stack-project-3">
-              <img 
-                src="img/img/projects/personal/full-stack/full-stack-4.png" 
-                class="swiper-slide project-modal-img" 
-                alt="full-stack-project-4">
+
+                <picture class="swiper-slide project-modal-img ">
+                  <source
+                    srcset="img/img/projects/personal/full-stack/full-stack-1.webp   560w"
+                    media="(min-width: 300px)" />
+
+                  <source
+                    srcset="img/img/projects/personal/full-stack/full-stack-1.jpg    560  w"
+                    media="(min-width: 300px)" />
+                  
+                  <img
+                    class="swiper-slide project-modal-img "
+                    src="img/img/projects/personal/full-stack/full-stack-1.jpg"
+                    alt="full-stack-project-1"
+                    loading="lazy"
+                  />
+                </picture>
+                <picture class="swiper-slide project-modal-img ">
+                  <source
+                    srcset="img/img/projects/personal/full-stack/full-stack-2.webp   560w"
+                    media="(min-width: 300px)" />
+                  <source
+                    srcset="img/img/projects/personal/full-stack/full-stack-2.jpg    560w"
+                    media="(min-width: 300px)" />
+                  <img
+                    class="swiper-slide project-modal-img "
+                    src="img/img/projects/personal/full-stack/full-stack-2.jpg"
+                    alt="full-stack-project-2"
+                    loading="lazy"
+                  />
+                </picture>
+                <picture class="swiper-slide project-modal-img ">
+                  <source
+                    srcset="img/img/projects/personal/full-stack/full-stack-3.webp   560w"
+                    media="(min-width: 300px)" />
+                  <source
+                    srcset="img/img/projects/personal/full-stack/full-stack-3.jpg    560w"
+                    media="(min-width: 300px)" />
+                  <img
+                    class="swiper-slide project-modal-img "
+                    src="img/img/projects/personal/full-stack/full-stack-3.jpg"
+                    alt="full-stack-project-3"
+                    loading="lazy"
+                  />
+                </picture>
+                <picture class="swiper-slide project-modal-img ">
+                  <source
+                    srcset="img/img/projects/personal/full-stack/full-stack-4.webp   560w"
+                    media="(min-width: 300px)" />
+                  <source
+                    srcset="img/img/projects/personal/full-stack/full-stack-4.jpg    560w"
+                    media="(min-width: 300px)" />
+                  <img
+                    class="swiper-slide project-modal-img "
+                    src="img/img/projects/personal/full-stack/full-stack-4.jpg"
+                    alt="full-stack-project-4"
+                    loading="lazy"
+                  />
+                </picture>
+
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -791,6 +1073,9 @@
             href="https://fullstackonline.goit.ua/"
             class="project-modal-title"
             target="_blank"
+            rel="noreferrer"
+            rel="nofollow"
+            rel="noopener"
             >Goit Full Stack разработчик</a
           >
 
@@ -825,18 +1110,52 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <img 
-                src="img/img/projects/personal/wedding/wedding-1.jpg" 
-                class="swiper-slide project-modal-img" 
-                alt="wedding-project-1">
-              <img 
-                src="img/img/projects/personal/wedding/wedding-2.jpg" 
-                class="swiper-slide project-modal-img" 
-                alt="wedding-project-2">
-              <img 
-                src="img/img/projects/personal/wedding/wedding-3.jpg" 
-                class="swiper-slide project-modal-img" 
-                alt="wedding-project-3">
+
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img/img/projects/personal/wedding/wedding-1.webp   560w"
+                  media="(min-width: 300px)" />
+
+                <source
+                  srcset="img/img/projects/personal/wedding/wedding-1.jpg    560w"
+                  media="(min-width: 300px)" />
+                
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img/img/projects/personal/wedding/wedding-1.jpg"
+                  alt="wedding-project-1"
+                  loading="lazy"
+                />
+              </picture>
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img/img/projects/personal/wedding/wedding-2.webp   560w"
+                  media="(min-width: 300px)" />
+                <source
+                  srcset="img/img/projects/personal/wedding/wedding-2.jpg    560w"
+                  media="(min-width: 300px)" />
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img/img/projects/personal/wedding/wedding-2.jpg"
+                  alt="wedding-project-2"
+                  loading="lazy"
+                />
+              </picture>
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img/img/projects/personal/wedding/wedding-3.webp   560w"
+                  media="(min-width: 300px)" />
+                <source
+                  srcset="img/img/projects/personal/wedding/wedding-3.jpg    560w"
+                  media="(min-width: 300px)" />
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img/img/projects/personal/wedding/wedding-3.jpg"
+                  alt="wedding-project-3"
+                  loading="lazy"
+                />
+              </picture>
+
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -850,6 +1169,10 @@
           <a
             href="https://www.beeruza.com.ua/"
             class="project-modal-title"
+            target="_blank"
+            rel="noreferrer"
+            rel="nofollow"
+            rel="noopener"
             >Beeruza - свадебные пригласительные и аксессуары</a
           >
 
@@ -880,18 +1203,53 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <img
-                class="swiper-slide project-modal-img" 
-                src="img/img/projects/personal/pro-test/pro-test-1.jpg" 
-                alt="pro-test-image-1">
-              <img 
-                class="swiper-slide project-modal-img" 
-                src="img/img/projects/personal/pro-test/pro-test-2.jpg" 
-                alt="pro-test-image-2">
-              <img 
-                class="swiper-slide project-modal-img" 
-                src="img/img/projects/personal/pro-test/pro-test-3.jpg" 
-                alt="pro-test-image-3">
+
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img/img/projects/personal/pro-test/pro-test-1.webp   560w"
+                  media="(min-width: 300px)" />
+
+                <source
+                  srcset="img/img/projects/personal/pro-test/pro-test-1.jpg    560w"
+                  media="(min-width: 300px)" />
+                
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img/img/projects/personal/pro-test/pro-test-1.jpg"
+                  alt="pro-test-image-1"
+                  loading="lazy"
+                />
+              </picture>
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img/img/projects/personal/pro-test/pro-test-2.webp   560w"
+                  media="(min-width: 300px)" />
+                <source
+                  srcset="img/img/projects/personal/pro-test/pro-test-2.jpg    560w"
+                  media="(min-width: 300px)" />
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img/img/projects/personal/pro-test/pro-test-2.jpg"
+                  alt="pro-test-image-2"
+                  loading="lazy"
+                />
+              </picture>
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img/img/projects/personal/pro-test/pro-test-3.webp   560w"
+                  media="(min-width: 300px)" />
+                <source
+                  srcset="img/img/projects/personal/pro-test/pro-test-3.jpg    560w"
+                  media="(min-width: 300px)" />
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img/img/projects/personal/pro-test/pro-test-3.jpg"
+                  alt="pro-test-image-3"
+                  loading="lazy"
+                />
+              </picture>
+
+
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -905,6 +1263,10 @@
           <a
             href="https://pro-test.goit.co.ua/"
             class="project-modal-title"
+            target="_blank"
+            rel="noreferrer"
+            rel="nofollow"
+            rel="noopener"
             >Pro test - техническая подготовка QA</a
           >
 
@@ -929,28 +1291,53 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-              <img
-                class="project-modal-img"
-                src="img/img/projects/personal/goit/goit-1.jpg"
-                alt="goit-project-image-1"
-              />
-              <img 
-                class="project-modal-img" 
-                src="img/img/projects/personal/goit/goit-2.jpg" 
-                alt="goit-project-image-2" 
-              />
-              <img 
-                class="project-modal-img" 
-                src="img/img/projects/personal/goit/goit-3.jpg" 
-                alt="goit-project-image-3" 
-              />
-              
 
-              <a
-                href="https://goit.ua/"
-                class="project-modal-title"
-                >GoIT - курсы программирования</a
-              >
+                <picture class="swiper-slide project-modal-img ">
+                  <source
+                    srcset="img/img/projects/personal/goit/goit-1.webp   560w"
+                    media="(min-width: 300px)" />
+  
+                  <source
+                    srcset="img/img/projects/personal/goit/goit-1.jpg    560w"
+                    media="(min-width: 300px)" />
+                  
+                  <img
+                    class="swiper-slide project-modal-img "
+                    src="img/img/projects/personal/goit/goit-1.jpg"
+                    alt="goit-project-image-1"
+                    loading="lazy"
+                  />
+                </picture>
+                <picture class="swiper-slide project-modal-img ">
+                  <source
+                    srcset="img/img/projects/personal/goit/goit-2.webp   560w"
+                    media="(min-width: 300px)" />
+                  <source
+                    srcset="img/img/projects/personal/goit/goit-2.jpg    560w"
+                    media="(min-width: 300px)" />
+                  <img
+                    class="swiper-slide project-modal-img "
+                    src="img/img/projects/personal/goit/goit-2.jpg"
+                    alt="goit-project-image-2"
+                    loading="lazy"
+                  />
+                </picture>
+                <picture class="swiper-slide project-modal-img ">
+                  <source
+                    srcset="img/img/projects/personal/goit/goit-3.webp   560w"
+                    media="(min-width: 300px)" />
+                  <source
+                    srcset="img/img/projects/personal/goit/goit-3.jpg    560w"
+                    media="(min-width: 300px)" />
+                  <img
+                    class="swiper-slide project-modal-img "
+                    src="img/img/projects/personal/goit/goit-3.jpg"
+                    alt="goit-project-image-3"
+                    loading="lazy"
+                  />
+                </picture>
+
+              
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -959,7 +1346,16 @@
             <div class="swiper-button-prev invisible"></div>
             <div class="swiper-button-next invisible"></div>
           </div>
-          
+          <a
+            href="https://goit.ua/"
+            class="project-modal-title"
+            target="_blank"
+            rel="noreferrer"
+            rel="nofollow"
+            rel="noopener"
+            >GoIT - курсы программирования</a
+          >
+
           <p class="project-modal-text">
             Многостраничный сайт с использованием HTML, CSS и JavaScript. 
             На сайте есть форма обратной связи и pop-up, который появляется через 30 секунд вашего присутствия на сайте. 
@@ -989,44 +1385,71 @@
           <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <img
-                class="project-modal-img"
-                src="img/img/projects/team/questify/questify-1.jpg"
-                alt="Questify-project-image-1"
-              />
-              <img 
-                class="project-modal-img" 
-                src="img/img/projects/team/questify/questify-2.jpg" 
-                alt="Questify-project-image-2" 
-              />
+              <!-- Slides -->
 
-              <img 
-                class="project-modal-img" 
-                src="img/img/projects/team/questify/questify-3.jpg" 
-                alt="Questify-project-image-3" 
-              />
-              <img 
-                class="project-modal-img" 
-                src="img/img/projects/team/questify/questify-4.jpg" 
-                alt="Questify-project-image-4" 
-              />
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img/img/projects/team/questify/questify-1.webp   560w"
+                  media="(min-width: 300px)" />
 
+                <source
+                  srcset="img/img/projects/team/questify/questify-1.jpg    560w"
+                  media="(min-width: 300px)" />
+                
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img/img/projects/team/questify/questify-1.jpg"
+                  alt="Questify-project-image-1"
+                  loading="lazy"
+                />
+              </picture>
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img/img/projects/team/questify/questify-2.webp   560w"
+                  media="(min-width: 300px)" />
+                <source
+                  srcset="img/img/projects/team/questify/questify-2.jpg    560w"
+                  media="(min-width: 300px)" />
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img/img/projects/team/questify/questify-2.jpg"
+                  alt="Questify-project-image-2"
+                  loading="lazy"
+                />
+              </picture>
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img/img/projects/team/questify/questify-3.webp   560w"
+                  media="(min-width: 300px)" />
+                <source
+                  srcset="img/img/projects/team/questify/questify-3.jpg    560w"
+                  media="(min-width: 300px)" />
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img/img/projects/team/questify/questify-3.jpg"
+                  alt="Questify-project-image-3"
+                  loading="lazy"
+                />
+              </picture>
               
             </div>
-          </div>
+          
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev tablet-element desktop-element"></div>
-          <div class="swiper-button-next tablet-element desktop-element"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
 
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+        </div>
 
           <a
           href="https://questify.goit.co.ua/"
           class="project-modal-title"
+          target="_blank"
+          rel="noreferrer"
+          rel="nofollow"
+          rel="noopener"
           >Questify - turn your life into a thrilling game</a
           >
 
@@ -1048,36 +1471,69 @@
           <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <img
-                class="project-modal-img"
-                src="img\img\projects\team\it-test\it-test-1.jpg"
-                alt="it-test-project-image-1"
-              />
-              <img 
-                class="project-modal-img" 
-                src="img\img\projects\team\it-test\it-test-2.jpg" 
-                alt="it-test-project-image-2" 
-              />
-              <img 
-                class="project-modal-img" 
-                src="img\img\projects\team\it-test\it-test-3.jpg" 
-                alt="it-test-project-image-3" 
-              />
+              <!-- Slides -->
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img\img\projects\team\it-test\it-test-1.webp   560w"
+                  media="(min-width: 300px)" />
+
+                <source
+                  srcset="img\img\projects\team\it-test\it-test-1.jpg    560w"
+                  media="(min-width: 300px)" />
+                
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img\img\projects\team\it-test\it-test-1.jpg"
+                  alt="it-test-project-image-1"
+                  loading="lazy"
+                />
+              </picture>
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img\img\projects\team\it-test\it-test-2.webp   560w"
+                  media="(min-width: 300px)" />
+                <source
+                  srcset="img\img\projects\team\it-test\it-test-2.jpg    560w"
+                  media="(min-width: 300px)" />
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img\img\projects\team\it-test\it-test-2.jpg"
+                  alt="it-test-project-image-2"
+                  loading="lazy"
+                />
+              </picture>
+              <picture class="swiper-slide project-modal-img ">
+                <source
+                  srcset="img\img\projects\team\it-test\it-test-3.webp   560w"
+                  media="(min-width: 300px)" />
+                <source
+                  srcset="img copy\projects\team\it-test\it-test-3.jpg    560w"
+                  media="(min-width: 300px)" />
+                <img
+                  class="swiper-slide project-modal-img "
+                  src="img\img\projects\team\it-test\it-test-3.jpg"
+                  alt="it-test-project-image-3"
+                  loading="lazy"
+                />
+              </picture>
+
             </div>
+          
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev tablet-element desktop-element"></div>
-          <div class="swiper-button-next tablet-element desktop-element"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
-
+          
           <a
             href="https://testit.co.ua/"
             class="project-modal-title"
+            target="_blank"
+            rel="noreferrer"
+            rel="nofollow"
+            rel="noopener"
             >Тест на профессиональную личность в IT
           </a>
 
