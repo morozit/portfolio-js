@@ -48,7 +48,6 @@
   }
 }
 
-//
 .personal-project {
   &__wrap {
     @media screen and (min-width: $desktop) {
@@ -80,12 +79,12 @@
 //   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 // }
 
-.projet-item-dot-container {
-  display: flex;
-  position: absolute;
-  top: 17px;
-  left: 20px;
-}
+// .projet-item-dot-container {
+//   display: flex;
+//   position: absolute;
+//   top: 17px;
+//   left: 20px;
+// }
 
 .personal-project-name {
   font-weight: normal;
