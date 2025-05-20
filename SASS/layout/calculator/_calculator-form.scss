@@ -33,24 +33,24 @@
   &__select {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid $c-grey;
+    border-bottom: 1px solid $c-accent;
     padding: 5px 0 17px 0;
     outline: none;
   }
 }
 
-// .calculator-form__select option {
-//   background-color: transparent;
-//   border: none;
-//   outline: none;
-// }
+.calculator-form__select option {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
 
-// .calculator-form__select option:hover,
-// .calculator-form__select option:focus {
-//   background-color: $c-accent;
-//   border-color: $c-accent;
-//   // outline: none;
-// }
+.calculator-form__select option:hover,
+.calculator-form__select option:focus {
+  background-color: $c-accent;
+  border-color: $c-accent;
+  // outline: none;
+}
 //  TODO: чекбокс
 .calculator-form {
   &__radio-container {
